@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>Coronavirus App</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <link href="./assets/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="is-desktop">
+    <header>
+        <div class="logo-header">
+            <img src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
+        </div>
+        <div class="toggle-bg"></div>
+    </header>
+
+    <section class="main-grid">
+        <div class="card chartmap">
+            <div id="chartdiv" class="chartdiv-map"></div>
+        </div>
+
+        <div class="card statistic">
+            <div class="stc-card-container" id="statistic">
+                <!-- <div class="stc-card stc-infect">
+                    <p class="stc-card-num">724.346</p>
+                    <p class="stc-card-title">Infections</p>
+                    <p class="stc-card-rate">Mild cases</p>
+                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                </div>
+                <div class="stc-card stc-death">
+                    <p class="stc-card-num">34.007</p>
+                    <p class="stc-card-title">Deaths</p>
+                    <p class="stc-card-rate">Death rate</p>
+                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                </div>
+                <div class="stc-card stc-recover">
+                    <p class="stc-card-num">724.346</p>
+                    <p class="stc-card-title">Recoveries</p>
+                    <p class="stc-card-rate">Recovery Rate</p>
+                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                </div>
+                <div class="stc-card stc-critical">
+                    <p class="stc-card-num">724.346</p>
+                    <p class="stc-card-title">Critical</p>
+                    <p class="stc-card-rate">Critical cases</p>
+                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                </div> -->
+            </div>
+            <div class="stc-sort-container">
+                <div class="stc-sort">
+                    <p class="sort-title">Search by Country | State | Prefecture</p>
+                    <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">Country</div>
+        <div class="card">Social Media</div>
+        <div class="card">Travel</div>
+    </section>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://covid.amCharts.com/data/js/world_timeline.js"></script>
+    <script src="https://covid.amCharts.com/data/js/total_timeline.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script type="module" src="./assets/js/main.js"></script>
+    <script src="./assets/js/map.js"></script>
+</body>
+</html>
