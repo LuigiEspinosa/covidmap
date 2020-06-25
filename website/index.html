@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="is-desktop">
+<body>
     <header>
         <div class="logo-header">
             <img src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
@@ -29,42 +29,93 @@
         </div>
 
         <div class="card statistic">
-            <div class="stc-card-container" id="statistic">
-                <!-- <div class="stc-card stc-infect">
-                    <p class="stc-card-num">724.346</p>
-                    <p class="stc-card-title">Infections</p>
-                    <p class="stc-card-rate">Mild cases</p>
-                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
-                </div>
-                <div class="stc-card stc-death">
-                    <p class="stc-card-num">34.007</p>
-                    <p class="stc-card-title">Deaths</p>
-                    <p class="stc-card-rate">Death rate</p>
-                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
-                </div>
-                <div class="stc-card stc-recover">
-                    <p class="stc-card-num">724.346</p>
-                    <p class="stc-card-title">Recoveries</p>
-                    <p class="stc-card-rate">Recovery Rate</p>
-                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
-                </div>
-                <div class="stc-card stc-critical">
-                    <p class="stc-card-num">724.346</p>
-                    <p class="stc-card-title">Critical</p>
-                    <p class="stc-card-rate">Critical cases</p>
-                    <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
-                </div> -->
-            </div>
+            <div class="stc-card-container" id="statistic"></div>
+
             <div class="stc-sort-container">
                 <div class="stc-sort">
-                    <p class="sort-title">Search by Country | State | Prefecture</p>
+                    <p class="sort-title">Search by country</p>
                     <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                </div>
+            </div>
+
+            <p class="stc-update">last update 3 hours ago</p>
+        </div>
+
+        <div class="card countries">
+            <div class="countries-title">
+                <h1>Covid-19 Cases</h1>
+                <h1>Today's Stats</h1>
+            </div>
+            <div class="countries-container">
+                <div class="country">
+                    <h2>USA</h2>
+                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                </div>
+                <div class="stats">
+                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                    <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                </div>
+            </div>
+            <div class="countries-container">
+                <div class="country">
+                    <h2>Austria</h2>
+                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                </div>
+                <div class="stats">
+                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                    <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                </div>
+            </div>
+            <div class="countries-container">
+                <div class="country">
+                    <h2>Denmark</h2>
+                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                </div>
+                <div class="stats">
+                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
+                </div>
+            </div>
+
+            <div class="full-country-container">
+                <ul class="country">
+                    <li class="name">Mexico</li>
+                    <li class="total">
+                        <span class="stat">41,494</span>
+                        <span class="subtitle">Total Cases</span>
+                    </li>
+                    <li class="deaths">
+                        <span class="stat">3,455</span>
+                        <span class="subtitle">Deaths</span>
+                    </li>
+                    <li class="active">
+                        <span class="stat">13.322</span>
+                        <span class="subtitle">Active</span>
+                    </li>
+                    <li class="recover">
+                        <span class="stat">3.533</span>
+                        <span class="subtitle">Recoveries</span>
+                    </li>
+                    <li class="closed">
+                        <span class="stat">3.533</span>
+                        <span class="subtitle">Closed Cases</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="countries-container">
+                <div class="country">
+                    <h2>Thailand</h2>
+                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                </div>
+            </div>
+            <div class="countries-container">
+                <div class="country">
+                    <h2>Philippines</h2>
+                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
                 </div>
             </div>
         </div>
 
-
-        <div class="card">Country</div>
         <div class="card">Social Media</div>
         <div class="card">Travel</div>
     </section>

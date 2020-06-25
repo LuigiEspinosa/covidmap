@@ -43,23 +43,29 @@
     margin: 0;
     padding: 0; }
 
+ul, 
+ol,
+li {
+	text-decoration: none;
+    list-style-type: none;
+}
+
 body {
     background: rgb(35, 27, 52);
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden; }
+    font-family: Arial, Helvetica, sans-serif; }
 
 header {
     width: 100%;
     height: 60px;
-    margin: 10px 0;
+    margin: 20px 0 0;
     display: inline-flex;
     justify-content: space-between;
     align-items: center; }
 
 .logo-header { margin-left: 20px; }
 .logo-header img {
-    width: 200px;
+	max-width: 70%;
     height: auto; }
 
 .toggle-bg {
@@ -70,8 +76,9 @@ header {
 
 .main-grid {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr; }
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    margin: 20px; }
 
 .card {
     display: flex;
@@ -79,7 +86,6 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-    box-shadow: rgba(3,8,20,0.1) 0px 0.15rem 0.5rem, rgba(2,8,20,0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
     border-radius: 4px;
@@ -91,8 +97,8 @@ header {
     display: grid;
     gap: 10px;
     margin: 0 20px 10px;
-    width: calc(100% - 40px);
-    grid-template-columns: repeat(auto-fit, minmax(122px, 1fr)); }
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
 .stc-card {
     padding: 10px 15px 5px;
     background: #262439; }
@@ -128,15 +134,16 @@ header {
 
 .stc-sort-container { 
     background: #27293c; 
-    width: calc(100% - 40px);
+    width: 100%;
     padding: 7px 0;
     border-radius: 5px; }
 .stc-sort {
     font-family: "SF Compact Display Thin";
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
-	padding: 6px 0;
+	align-items: baseline;
+	line-height: 1.5;
+	height: 35px;
 	margin: 0 20px; }
 .stc-sort .sort-title { font-size: 1.4em; }
 .stc-sort .sort-button {
@@ -149,6 +156,107 @@ header {
 .stc-sort .sort-button i {
 	font-size: 0.8em;
 	padding-left: 10px; }
+
+.statistic .stc-update {
+    font-family: "SF Compact Display Thin";
+    font-size: 0.9rem;
+    margin: 10px 0 0; }
+
+.countries-title,
+.countries-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+
+.countries-title {
+    font-size: 0.6rem;
+    font-family: "SF Compact Display Thin";
+    margin-bottom: 25px;
+    color: #bbb; }
+
+.countries-container { margin-bottom: 35px }
+.countries-container .country {
+	text-align: left;
+	padding-left: 60px;
+	position: relative; }
+.countries-container .country:before {
+	width: 45px;
+	height: 30px;
+	content: "";
+	background: #f00;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -15px; }
+.countries-container .country h2 {
+	font-size: 1.25rem;
+    font-family: "SF Compact Display Light";
+    padding-left: 5px;
+    margin-bottom: 2px; }
+.countries-container .country p {
+	font-size: 1rem;
+    font-family: "SF Compact Display Medium"; }
+
+.countries-container .country p span.cases,
+.countries-container .stats p.cases { color:#a57af2; }
+.countries-container .country p span.deaths,
+.countries-container .stats p.deaths { color:#ea536f; }
+
+.countries-container .stats {
+	font-family: "SF Compact Display Medium";
+	text-align: right;
+	line-height: 1.5;
+	font-size: 0.9rem; }
+.countries-container .stats span.percent { 
+    padding-left: 8px;
+    color: #73cc88; }
+.countries-container .stats span.percent i { 
+    font-size: 0.7em;
+    margin-right: 4px;
+    position:relative;
+    top: -1px }
+.countries-container .stats span.percent i.icon-up { color: #73cc88; }
+.countries-container .stats span.percent i.icon-down { color: #ea536f; }
+
+.full-country-container {
+	width: 100%;
+	margin: -5px 0 20px; }
+.full-country-container .country {
+	background: #27293c;
+	display: grid;
+	padding: 10px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 0.5rem; }
+.full-country-container .country li {
+	display: flex;
+	flex-direction: column; }
+.full-country-container .country li .stat {
+    font-family: "SF Compact Display Medium";
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px; }
+.full-country-container .country .name { 
+    padding-top: 20px;
+    position: relative; }
+.full-country-container .country .name:before {
+	width: 25px;
+	height: 15px;
+	content: "";
+	background: #f00;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -11px; }
+.full-country-container .country .name,
+.full-country-container .country li .subtitle {
+	color: #bbb;
+	font-size: 0.65rem;
+	text-transform: capitalize; }
+.full-country-container .country li.total .stat {color:#a57af2;}
+.full-country-container .country li.deaths .stat {color: #ea536f;}
+.full-country-container .country li.active .stat {color: #7fcc88;}
+.full-country-container .country li.recover .stat {color: #f6ca4f}
+
 
 /* @media (min-width: 1024px) {
     .main-grid {
