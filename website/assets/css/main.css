@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "SF Compact Display Thin";
+	src: url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.eot");
+    src: url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.eot?#iefix") format("embedded-opentype"), 
+         url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.woff2") format("woff2"), 
+         url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.woff") format("woff"), 
+         url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.ttf") format("truetype"), 
+         url("https://db.onlinewebfonts.com/t/2de783aa20e33385dd42d0049b5bc7c7.svg#SF Compact Display") format("svg") }
+@font-face {
+	font-family: "SF Compact Display Light";
+	src: url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.eot");
+    src: url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.eot?#iefix") format("embedded-opentype"), 
+         url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.woff2") format("woff2"), 
+         url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.woff") format("woff"), 
+         url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.ttf") format("truetype"), 
+         url("https://db.onlinewebfonts.com/t/1ae4a10df3a35a7ac5a8032c64f3c801.svg#SF Compact Display") format("svg") }
+@font-face {
+	font-family: "SF Compact Display Regular";
+	src: url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.eot");
+    src: url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.eot?#iefix") format("embedded-opentype"), 
+         url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.woff2") format("woff2"), 
+         url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.woff") format("woff"), 
+         url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.ttf") format("truetype"), 
+         url("https://db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.svg#SF Compact Display") format("svg") }
+@font-face {
+	font-family: "SF Compact Display Medium";
+	src: url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.eot");
+    src: url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.eot?#iefix") format("embedded-opentype"), 
+         url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.woff2") format("woff2"), 
+         url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.woff") format("woff"), 
+         url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.ttf") format("truetype"), 
+         url("https://db.onlinewebfonts.com/t/5ec2f3312f239da77e9f457fee061c0c.svg#SF Compact Display") format("svg") }
+@font-face {
+	font-family: "SF Compact Display Semibold";
+	src: url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.eot");
+    src: url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.eot?#iefix") format("embedded-opentype"), 
+         url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.woff2") format("woff2"), 
+         url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.woff") format("woff"), 
+         url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.ttf") format("truetype"), 
+         url("https://db.onlinewebfonts.com/t/98b8860736a2ad9b96a0357c9007d1ec.svg#SF Compact Display") format("svg") }
+
+* {
+    margin: 0;
+    padding: 0; }
+
+ul, 
+ol,
+li {
+    list-style-type: none; }
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: rgb(35, 27, 52);
+    color: #fff;
+    font-family: "SF Compact Display Regular"; }

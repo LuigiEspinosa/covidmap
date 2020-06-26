@@ -17,14 +17,14 @@ am4core.ready(function() {
   // for an easier access by key
   var colors = { active: activeColor, confirmed: confirmedColor, recovered: recoveredColor, deaths: deathsColor };
 
-  var countryColor = am4core.color("#3b3b3b");
+  var countryColor = am4core.color("#292b3c");
   var countryStrokeColor = am4core.color("#000000");
   var buttonStrokeColor = am4core.color("#ffffff");
   var countryHoverColor = am4core.color("#1b1b1b");
   var activeCountryColor = am4core.color("#0f0f0f");
 
   var currentIndex;
-  var currentCountry = "World";
+  var currentCountry = "Earth";
 
   // last date of the data
   var lastDate = new Date(covid_total_timeline[covid_total_timeline.length - 1].date);
@@ -310,7 +310,7 @@ am4core.ready(function() {
   // top title
   var title = mapChart.titles.create();
   title.fontSize = "1.5em";
-  title.text = "COVID-19 Spread Data";
+  // title.text = "COVID-19 Spread Data";
   title.align = "left";
   title.horizontalCenter = "left";
   title.marginLeft = 20;
@@ -1169,7 +1169,7 @@ am4core.ready(function() {
 
   // show world data
   function showWorld() {
-    currentCountry = "World";
+    currentCountry = "Earth";
     currentPolygon = undefined;
     resetHover();
 

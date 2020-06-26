@@ -13,138 +13,331 @@
 
     <link href="./assets/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
 </head>
 <body>
-    <header>
-        <div class="logo-header">
-            <img src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
-        </div>
-        <!-- <div class="toggle-bg"></div> -->
-    </header>
+    <div class="mobile">
+        <header>
+            <div class="logo-header">
+                <img src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
+            </div>
+            <!-- <div class="toggle-bg"></div> -->
+        </header>
 
-    <section class="main-grid">
-        <div class="card statistic">
-            <div class="stc-card-container" id="statistic"></div>
+        <section class="main-grid">
+            <div class="card statistic">
+                <div class="stc-card-container" id="statistic"></div>
+    
+                <div class="stc-sort-container" id="countrySelect" name="country">
+                    <div class="stc-sort">
+                        <p class="sort-title">Search by country</p>
+                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                    </div>
+                </div>
+    
+                <p class="stc-update">last update 3 hours ago</p>
+            </div>
+    
+            <div class="card countries">
+                <div class="countries-title">
+                    <h1>Covid-19 Cases</h1>
+                    <h1>Today's Stats</h1>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>USA</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Austria</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Denmark</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
+                    </div>
+                </div>
+    
+                <div class="full-country-container">
+                    <ul class="country">
+                        <li class="name">Mexico</li>
+                        <li class="total">
+                            <span class="stat">41,494</span>
+                            <span class="subtitle">Total Cases</span>
+                        </li>
+                        <li class="deaths">
+                            <span class="stat">3,455</span>
+                            <span class="subtitle">Deaths</span>
+                        </li>
+                        <li class="active">
+                            <span class="stat">13.322</span>
+                            <span class="subtitle">Active</span>
+                        </li>
+                        <li class="recover">
+                            <span class="stat">3.533</span>
+                            <span class="subtitle">Recoveries</span>
+                        </li>
+                        <li class="closed">
+                            <span class="stat">3.533</span>
+                            <span class="subtitle">Closed Cases</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Thailand</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Philippines</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                </div>
+            </div>
+    
+            <footer class="footer">
+                <div class="support">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                    </a>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="app-link">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Install our App</a>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li class="twitter"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                        <li class="facebook"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                        <li class="dribble"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                    <p>Share our Tracker</p>
+                </div>
+            </footer>
+        </section>
+    </div>
 
-            <div class="stc-sort-container">
-                <div class="stc-sort">
+    <div class="desktop">
+        <section class="main-grid">
+            <header>
+                <div class="logo-header">
+                    <img src="./assets/img/logo650x121.png" alt="Coronavirus App" width="650" height="121">
+                </div>
+                <!-- <div class="toggle-bg"></div> -->
+            </header>
+
+            <div class="card news">
+                <div class="news-header">
+                    <h2>coronavirusapp.io <span>Latest live news</span></h2>
+                    <p>RSS Feed</p>
+                </div>
+                <div class="news-cards">
+                    <ul class="news-item-container">
+                        <li class="news-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/news260x159.png" alt="News RSS Feed" width="260" height="159">
+                                <h1>Myanmar reports first corona virus death</h1>
+                                <h3>The mercury news - 29 mins</h3>
+                            </a>
+                        </li>
+                        <li class="news-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/news260x159.png" alt="News RSS Feed" width="260" height="159">
+                                <h1>Myanmar reports first corona virus death</h1>
+                                <h3>The mercury news - 29 mins</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news-headlines">
+                    <ul class="headlines-container">
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card advice">
+                <div class="advice-container">
+                    <h2>Travel advisory</h2>
+                    <p>Japan tightens border controls</p>
+                    <p><span>updated march 31, 2020</span></p>
+                </div>
+                <div class="advice-button">
+                    <a href="#" class="sort-button"><i class="fas fa-sort-down"></i></a>
+                </div>
+            </div>
+
+            <div class="card app">
+                <div class="app-container">
+                    <h1>Coronavirusapp.io <span>System updates</span></h1>
+                    <ul class="app-items-container">
+                        <li class="app-items">
+                            We are in the process of development for 
+                            our upcoming iOS | Android App
+                            <span class="date">April 11, 2020</span>
+                        </li>
+                        <li class="app-items">
+                            <span class="subtitle">Website Launched</span>
+                            We finally released our beta module panel via our website and in  App 
+                            <span class="date">April 7th, 2020 </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card manual">
+                <div class="manual-header">
+                    <p class="sort-title">Download official PDF Manual</p>
+                    <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                </div>
+                <ul class="manual-pdf">
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                </ul>
+            </div>
+            <div class="card social">
+                <div class="social-header">
+                    <h2>Share our tracker</h2>
+                    <p>Help us spread the word and keep the community informed</p>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li class="twitter"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                        <li class="facebook"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                        <li class="dribble"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">+ More</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card statistic">
+                <div class="nightmode"></div>
+                <div class="world-cases">
+                    <h1>Worldwide cases</h1>
+                    <div class="stc-card-container">
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="us-cases">
+                    <h1>In the united states</h1>
+                    <div class="stc-card-container">
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                    </div>
+                    <div class="us-sort">
+                        <p class="sort-title">Search by the USA States</p>
+                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                    </div>
+                </div>
+                <div class="japan-cases">
+                    <h1>In Japan</h1>
+                    <div class="stc-card-container">
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-title">Infections</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="update">update 5 minutes ago</p>
+                <div class="country-sort">
                     <p class="sort-title">Search by country</p>
                     <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
                 </div>
             </div>
 
-            <p class="stc-update">last update 3 hours ago</p>
-        </div>
+            <div class="card countries"></div>
 
-        <div class="card countries">
-            <div class="countries-title">
-                <h1>Covid-19 Cases</h1>
-                <h1>Today's Stats</h1>
+            <div class="card chartmap">
+                <div id="chartdiv" class="chartdiv-map"></div>
             </div>
-            <div class="countries-container">
-                <div class="country">
-                    <h2>USA</h2>
-                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                </div>
-                <div class="stats">
-                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                    <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
-                </div>
-            </div>
-            <div class="countries-container">
-                <div class="country">
-                    <h2>Austria</h2>
-                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                </div>
-                <div class="stats">
-                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                    <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
-                </div>
-            </div>
-            <div class="countries-container">
-                <div class="country">
-                    <h2>Denmark</h2>
-                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                </div>
-                <div class="stats">
-                    <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
-                </div>
-            </div>
-
-            <div class="full-country-container">
-                <ul class="country">
-                    <li class="name">Mexico</li>
-                    <li class="total">
-                        <span class="stat">41,494</span>
-                        <span class="subtitle">Total Cases</span>
-                    </li>
-                    <li class="deaths">
-                        <span class="stat">3,455</span>
-                        <span class="subtitle">Deaths</span>
-                    </li>
-                    <li class="active">
-                        <span class="stat">13.322</span>
-                        <span class="subtitle">Active</span>
-                    </li>
-                    <li class="recover">
-                        <span class="stat">3.533</span>
-                        <span class="subtitle">Recoveries</span>
-                    </li>
-                    <li class="closed">
-                        <span class="stat">3.533</span>
-                        <span class="subtitle">Closed Cases</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="countries-container">
-                <div class="country">
-                    <h2>Thailand</h2>
-                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                </div>
-            </div>
-            <div class="countries-container">
-                <div class="country">
-                    <h2>Philippines</h2>
-                    <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="support">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
-                </a>
-            </div>
-            <div class="contact">
-                <ul>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
-                </ul>
-            </div>
-            <div class="app-link">
-                <a href="#" target="_blank" rel="noopener noreferrer">Install our App</a>
-            </div>
-            <div class="social-media">
-                <ul>
-                    <li class="twitter"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="instagram"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                    <li class="dribble"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a></li>
-                </ul>
-                <p>Share our Tracker</p>
-            </div>
-        </footer>
-
-        <div class="card chartmap">
-            <div id="chartdiv" class="chartdiv-map"></div>
-        </div>
-
-        <div class="card travel"></div>
-    </section>
+        </section>
+    </div>
 
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
