@@ -56,3 +56,34 @@ body {
     background: rgb(35, 27, 52);
     color: #fff;
     font-family: "SF Compact Display Regular"; }
+body.light  { 
+    background: #fff;
+    color: #000; }
+
+.light-mode .checkbox { 
+    opacity: 0;
+    position: absolute; }
+.light-mode span {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+    padding: 0 10px;
+    transition: all .4s linear; }
+.light-mode span.light { display: none; }
+.light-mode .checkbox:checked + .label {  background-color: #ccc; }
+.light-mode .checkbox:checked + .label span.dark { display: none }
+.light-mode .checkbox:checked + .label span.light { 
+    display: block;
+    text-align: left;
+    color: #111; }
+.light-mode .label {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 50px;
+    height: 26px;
+    width: 100px;
+    position: relative; }

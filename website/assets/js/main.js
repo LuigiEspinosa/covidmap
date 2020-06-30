@@ -4,6 +4,16 @@ import Countries from './country.js'
 
 const api = new API()
 
+const chk = document.getElementById('chk');
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
+
+const chk_desktop = document.getElementById('chk_desktop');
+chk_desktop.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
+
 async function renderWorldTotalData() {
     const data = await api.getWorldTotalData()
     console.log(data)

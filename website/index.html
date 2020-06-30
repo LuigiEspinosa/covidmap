@@ -16,14 +16,23 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/mobile.css">
     <link rel="stylesheet" href="./assets/css/desktop.css">
+    <link rel="stylesheet" href="./assets/css/big.css">
 </head>
 <body>
     <div class="mobile">
         <header>
             <div class="logo-header">
-                <img src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
+                <img class="dark" src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
+                <img class="light" src="./assets/img/logo650x122_light.png" alt="Coronavirus App" width="650" height="122">
             </div>
-            <!-- <div class="toggle-bg"></div> -->
+            <div class="light-mode">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label for="chk" class="label">
+                    <span class="dark">Dark mode</span>
+                    <span class="light">Ligh mode</span>
+                    <div class="ball"></div>
+                </label>
+            </div>
         </header>
 
         <section class="main-grid">
@@ -118,7 +127,8 @@
             <footer class="footer">
                 <div class="support">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                        <img class="dark" src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                        <img class="light" src="./assets/img/coffe350x79_light.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
                     </a>
                 </div>
                 <div class="contact">
@@ -148,9 +158,9 @@
         <section class="main-grid">
             <header>
                 <div class="logo-header">
-                    <img src="./assets/img/logo650x121.png" alt="Coronavirus App" width="650" height="121">
+                    <img class="dark" src="./assets/img/logo650x121.png" alt="Coronavirus App" width="650" height="121">
+                    <img class="light" src="./assets/img/logo650x121_light.png" alt="Coronavirus App" width="650" height="121">
                 </div>
-                <!-- <div class="toggle-bg"></div> -->
             </header>
 
             <div class="card news">
@@ -178,6 +188,18 @@
                 </div>
                 <div class="news-headlines">
                     <ul class="headlines-container">
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
+                        <li class="headlines-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                <h3>17 minutes ago </h3>
+                            </a>
+                        </li>
                         <li class="headlines-item">
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
@@ -272,7 +294,17 @@
             </div>
 
             <div class="card statistic">
-                <div class="nightmode"></div>
+                <div class="nightmode">
+                    <div class="light-mode">
+                        <input type="checkbox" class="checkbox" id="chk_desktop">
+                        <label for="chk_desktop" class="label">
+                            <span class="dark">Dark mode</span>
+                            <span class="light">Ligh mode</span>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="world-cases">
                     <h1>Worldwide cases</h1>
                     <div class="stc-card-container">
@@ -280,17 +312,17 @@
                             <p class="stc-card-num">2.329.651</p>
                             <p class="stc-card-title">Infections</p>
                         </div>
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="stc-card stc-death">
+                            <p class="stc-card-num">160.721</p>
+                            <p class="stc-card-title">Deaths</p>
                         </div>
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="stc-card stc-recover">
+                            <p class="stc-card-num">595.433</p>
+                            <p class="stc-card-title">Recoveries</p>
                         </div>
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="stc-card stc-critical">
+                            <p class="stc-card-num">26.719</p>
+                            <p class="stc-card-title">Critical</p>
                         </div>
                     </div>
                 </div>
@@ -298,12 +330,12 @@
                     <h1>In the united states</h1>
                     <div class="stc-card-container">
                         <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-num">740.557 </p>
                             <p class="stc-card-title">Infections</p>
                         </div>
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="stc-card stc-death">
+                            <p class="stc-card-num">38.979</p>
+                            <p class="stc-card-title">Deaths</p>
                         </div>
                     </div>
                     <div class="us-sort">
@@ -315,13 +347,17 @@
                     <h1>In Japan</h1>
                     <div class="stc-card-container">
                         <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
+                            <p class="stc-card-num">10.437</p>
                             <p class="stc-card-title">Infections</p>
                         </div>
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="stc-card stc-death">
+                            <p class="stc-card-num">63</p>
+                            <p class="stc-card-title">Deaths</p>
                         </div>
+                    </div>
+                    <div class="japan-sort">
+                        <p class="sort-title">Search by Prefecture 県</p>
+                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
                     </div>
                 </div>
                 <p class="update">update 5 minutes ago</p>
@@ -331,7 +367,109 @@
                 </div>
             </div>
 
-            <div class="card countries"></div>
+            <div class="card countries">
+                <div class="countries-title">
+                    <h1>Covid-19 Cases</h1>
+                    <h1>Today's Stats</h1>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>USA</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Austria</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
+                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Denmark</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Mexico</h2>
+                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+                    </div>
+                    <div class="stats">
+                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
+                    </div>
+                </div>
+    
+                <div class="full-country-container">
+                    <ul class="country">
+                        <li class="name">Mexico</li>
+                        <li class="total">
+                            <span class="stat">41,494</span>
+                            <span class="subtitle">Total Cases</span>
+                        </li>
+                        <li class="deaths">
+                            <span class="stat">3,455</span>
+                            <span class="subtitle">Deaths</span>
+                        </li>
+                        <li class="active">
+                            <span class="stat">13.322</span>
+                            <span class="subtitle">Active</span>
+                        </li>
+                        <li class="recover">
+                            <span class="stat">3.533</span>
+                            <span class="subtitle">Recoveries</span>
+                        </li>
+                        <li class="closed">
+                            <span class="stat">3.533</span>
+                            <span class="subtitle">Closed Cases</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Philippines</h2>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Switzerland</h2>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>Israel</h2>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>S. Korea</h2>
+                    </div>
+                </div>
+                <div class="countries-container">
+                    <div class="country">
+                        <h2>New Zeland</h2>
+                    </div>
+                </div>
+
+                <div class="coffe">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="dark" src="./assets/img/coffe390x65.png" alt="Buy me a coffe" width="390" height="65">
+                        <img class="light" src="./assets/img/coffe390x65_light.png" alt="Buy me a coffe" width="390" height="65">
+                    </a>
+                </div>
+            </div>
 
             <div class="card chartmap">
                 <div id="chartdiv" class="chartdiv-map"></div>
