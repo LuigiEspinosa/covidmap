@@ -20,168 +20,529 @@
 </head>
 <body>
     <div class="mobile">
-        <header>
-            <div class="logo-header">
-                <img class="dark" src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
-                <img class="light" src="./assets/img/logo650x122_light.png" alt="Coronavirus App" width="650" height="122">
-            </div>
-            <div class="light-mode">
-                <input type="checkbox" class="checkbox" id="chk">
-                <label for="chk" class="label">
-                    <span class="dark">Dark mode</span>
-                    <span class="light">Ligh mode</span>
-                    <div class="ball"></div>
-                </label>
-            </div>
-        </header>
-
-        <section class="main-grid">
-            <div class="card statistic">
-                <div class="stc-card-container" id="statistic"></div>
-    
-                <div class="stc-sort-container" id="countrySelect" name="country">
-                    <div class="stc-sort">
-                        <p class="sort-title">Search by country</p>
-                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
-                    </div>
-                </div>
-    
-                <p class="stc-update">last update 3 hours ago</p>
-            </div>
-    
-            <div class="card countries">
-                <div class="countries-title">
-                    <h1>Covid-19 Cases</h1>
-                    <h1>Today's Stats</h1>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>USA</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Austria</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Denmark</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
-                    </div>
-                </div>
-    
-                <div class="full-country-container">
-                    <ul class="country">
-                        <li class="name">Mexico</li>
-                        <li class="total">
-                            <span class="stat">41,494</span>
-                            <span class="subtitle">Total Cases</span>
-                        </li>
-                        <li class="deaths">
-                            <span class="stat">3,455</span>
-                            <span class="subtitle">Deaths</span>
-                        </li>
-                        <li class="active">
-                            <span class="stat">13.322</span>
-                            <span class="subtitle">Active</span>
-                        </li>
-                        <li class="recover">
-                            <span class="stat">3.533</span>
-                            <span class="subtitle">Recoveries</span>
-                        </li>
-                        <li class="closed">
-                            <span class="stat">3.533</span>
-                            <span class="subtitle">Closed Cases</span>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Thailand</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Philippines</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                </div>
-            </div>
-    
-            <footer class="footer">
-                <div class="support">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="dark" src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
-                        <img class="light" src="./assets/img/coffe350x79_light.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
-                    </a>
-                </div>
-                <div class="contact">
-                    <ul>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="app-link">
-                    <a href="#" target="_blank" rel="noopener noreferrer">Install our App</a>
-                </div>
-                <div class="social-media">
-                    <ul>
-                        <li class="twitter"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="instagram"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                        <li class="dribble"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                    <p>Share our Tracker</p>
-                </div>
-            </footer>
-        </section>
-    </div>
-
-    <div class="desktop">
-        <section class="main-grid">
+        <div class="logo-area">
             <header>
                 <div class="logo-header">
-                    <img class="dark" src="./assets/img/logo650x121.png" alt="Coronavirus App" width="650" height="121">
-                    <img class="light" src="./assets/img/logo650x121_light.png" alt="Coronavirus App" width="650" height="121">
+                    <a href="#">
+                        <img class="dark" src="./assets/img/logo650x122.png" alt="Coronavirus App" width="650" height="122">
+                        <img class="light" src="./assets/img/logo650x122_light.png" alt="Coronavirus App" width="650" height="122">
+                    </a>
+                </div>
+
+                <div class="card nightmode">
+                    <div class="night-container">
+                        <div class="toggle-wrapper">
+                            <label for="chk" class="toggle">
+                                <input type="checkbox" class="checkbox" id="chk">
+                                <div class="toggler round"></div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </header>
 
+            <div class="statistic">
+                <div class="stc-card-container">
+                    <div class="card">
+                        <div class="stc-card stc-infect">
+                            <p class="stc-card-num">10,265,928</p>
+                            <p class="stc-card-title">Infections</p>
+                            <p class="stc-card-rate">Mild cases</p>
+                            <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stc-card stc-death">
+                            <p class="stc-card-num">504,759</p>
+                            <p class="stc-card-title">Deaths</p>
+                            <p class="stc-card-rate">Death rate</p>
+                            <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stc-card stc-recover">
+                            <p class="stc-card-num">5,361,418</p>
+                            <p class="stc-card-title">Recoveries</p>
+                            <p class="stc-card-rate">Recovery Rate</p>
+                            <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stc-card stc-active">
+                            <p class="stc-card-num">26,719</p>
+                            <p class="stc-card-title">Critical</p>
+                            <p class="stc-card-rate">Critical cases</p>
+                            <p class="stc-card-percent"><i class="fas fa-angle-double-up"></i>95.5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="countries">
+                <div class="search-contry">
+                    <div class="update">last update 3 hours ago</div>
+                    <div class="countries-title">
+                        <span class="title">Covid-19 Cases</span>
+                        <span class="subtitle">Today's Stats</span>
+                    </div>
+                    <input type="text" autocomplete="off" placeholder="Search by Country" class="search-input" value="">
+                    <div class="sort-by">
+                        Sort By
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </div>
+        
+                <div class="country-area">
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-footer">
+                <footer class="footer">
+                    <div class="support">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="dark" src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                            <img class="light" src="./assets/img/coffe350x79_light.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                        </a>
+                    </div>
+        
+                    <div class="contact">
+                        <ul>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="app-link">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-mobile-alt"></i>
+                            Install our App
+                        </a>
+                    </div>
+        
+                    <div class="social-media">
+                        <ul>
+                            <li class="twitter">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+        
+                            <li class="facebook">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+        
+                            <li class="instagram">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+        
+                            <li class="dribble">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Share our Tracker</p>
+                    </div>
+                </footer>
+            </div>
+        </div> 
+    </div>
+
+    <div class="desktop">
+        <div class="left-column">
+            <div class="card logo-area">
+                <div class="logo-header">
+                    <a href="#">
+                        <img class="dark" src="./assets/img/logo650x121.png" alt="Coronavirus App" width="650" height="121">
+                        <img class="light" src="./assets/img/logo650x121_light.png" alt="Coronavirus App" width="650" height="121">
+                    </a>
+                </div>
+            </div>
+
             <div class="card news">
                 <div class="news-header">
-                    <h2>coronavirusapp.io <span>Latest live news</span></h2>
-                    <p>RSS Feed</p>
+                    <span class="title">
+                        coronavirusapp.io 
+                        <span class="highlight">Latest live news</span>
+                    </span>
+        
+                    <span class="subtitle">RSS Feed</span>
                 </div>
+        
                 <div class="news-cards">
                     <ul class="news-item-container">
                         <li class="news-item">
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="./assets/img/news260x159.png" alt="News RSS Feed" width="260" height="159">
-                                <h1>Myanmar reports first corona virus death</h1>
-                                <h3>The mercury news - 29 mins</h3>
+                                <div class="item-box">
+                                    <h1>Myanmar reports first corona virus death</h1>
+                                    <h3>The mercury news - 29 mins</h3>
+                                </div>
                             </a>
                         </li>
                         <li class="news-item">
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="./assets/img/news260x159.png" alt="News RSS Feed" width="260" height="159">
-                                <h1>Myanmar reports first corona virus death</h1>
-                                <h3>The mercury news - 29 mins</h3>
+                                <div class="item-box">
+                                    <h1>Myanmar reports first corona virus death</h1>
+                                    <h3>The mercury news - 29 mins</h3>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -200,42 +561,47 @@
                                 <h3>17 minutes ago </h3>
                             </a>
                         </li>
-                        <li class="headlines-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
-                                <h3>17 minutes ago </h3>
-                            </a>
-                        </li>
-                        <li class="headlines-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
-                                <h3>17 minutes ago </h3>
-                            </a>
-                        </li>
-                        <li class="headlines-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
-                                <h3>17 minutes ago </h3>
-                            </a>
-                        </li>
-                        <li class="headlines-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
-                                <h3>17 minutes ago </h3>
-                            </a>
-                        </li>
+                        <div class="big-screen">
+                            <li class="headlines-item">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                    <h3>17 minutes ago </h3>
+                                </a>
+                            </li>
+                            <li class="headlines-item">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                    <h3>17 minutes ago </h3>
+                                </a>
+                            </li>
+                            <li class="headlines-item">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                    <h3>17 minutes ago </h3>
+                                </a>
+                            </li>
+                            <li class="headlines-item">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <h2>Willow Smith ventures out of coronavirus isolation with boyfriend Tyler Cole</h2>
+                                    <h3>17 minutes ago </h3>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
 
             <div class="card advice">
+                <i class="fas fa-exclamation-triangle"></i>
                 <div class="advice-container">
                     <h2>Travel advisory</h2>
                     <p>Japan tightens border controls</p>
                     <p><span>updated march 31, 2020</span></p>
                 </div>
                 <div class="advice-button">
-                    <a href="#" class="sort-button"><i class="fas fa-sort-down"></i></a>
+                    <a href="#" class="sort-button">
+                        <i class="fas fa-sort-down"></i>
+                    </a>
                 </div>
             </div>
 
@@ -244,237 +610,570 @@
                     <h1>Coronavirusapp.io <span>System updates</span></h1>
                     <ul class="app-items-container">
                         <li class="app-items">
+                            <i class="fas fa-circle"></i>
                             We are in the process of development for 
                             our upcoming iOS | Android App
                             <span class="date">April 11, 2020</span>
                         </li>
                         <li class="app-items">
+                            <i class="fas fa-circle"></i>
                             <span class="subtitle">Website Launched</span>
                             We finally released our beta module panel via our website and in  App 
                             <span class="date">April 7th, 2020 </span>
                         </li>
                     </ul>
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
             </div>
 
             <div class="card manual">
                 <div class="manual-header">
                     <p class="sort-title">Download official PDF Manual</p>
-                    <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                    <button class="sort-button">
+                        Sort By
+                        <i class="fas fa-sort"></i>
+                    </button>
                 </div>
+        
                 <ul class="manual-pdf">
                     <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
                     <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
                     <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
-                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
-                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
-                    <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    <div class="big-screen">
+                        <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                        <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                        <li class="pdf"><img src="./assets/img/pdf130x168.png" alt="Covid-19 Manual" width="130" height="168"><span>Covid-19 Manual</span></li>
+                    </div>
                 </ul>
             </div>
+
             <div class="card social">
                 <div class="social-header">
                     <h2>Share our tracker</h2>
                     <p>Help us spread the word and keep the community informed</p>
                 </div>
+    
                 <div class="social-media">
                     <ul>
-                        <li class="twitter"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="instagram"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                        <li class="dribble"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a></li>
+                        <li class="twitter">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+    
+                        <li class="facebook">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+    
+                        <li class="instagram">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+    
+                        <li class="dribble">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
                     </ul>
+                    <p>Email: info@coronavirusapp.io</p>
                 </div>
+    
                 <div class="contact">
                     <ul>
                         <li><a href="#" target="_blank" rel="noopener noreferrer">Sources</a></li>
                         <li><a href="#" target="_blank" rel="noopener noreferrer">Follow us</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer">+ More</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="card statistic">
-                <div class="nightmode">
-                    <div class="light-mode">
-                        <input type="checkbox" class="checkbox" id="chk_desktop">
-                        <label for="chk_desktop" class="label">
-                            <span class="dark">Dark mode</span>
-                            <span class="light">Ligh mode</span>
-                            <div class="ball"></div>
+        </div>
+    
+        <div class="card chartmap">
+            <div id="chartdiv" class="chartdiv-map"></div>
+        </div>
+        
+        <div class="right-column">
+            <div class="card nightmode">
+                <div class="night-container">
+                    <div class="toggle-wrapper">
+                        <label for="chk_desktop" class="toggle">
+                            <input type="checkbox" class="checkbox" id="chk_desktop">
+                            <div class="toggler round"></div>
                         </label>
                     </div>
+    
+                    <div class="lang">
+                        JP
+                        <img src="./assets/flags/JP.png" alt="Japan" width="30" height="30">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
                 </div>
+            </div>
 
+            <div class="card stats">
                 <div class="world-cases">
                     <h1>Worldwide cases</h1>
-                    <div class="stc-card-container">
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">2.329.651</p>
-                            <p class="stc-card-title">Infections</p>
-                        </div>
-                        <div class="stc-card stc-death">
-                            <p class="stc-card-num">160.721</p>
-                            <p class="stc-card-title">Deaths</p>
-                        </div>
-                        <div class="stc-card stc-recover">
-                            <p class="stc-card-num">595.433</p>
-                            <p class="stc-card-title">Recoveries</p>
-                        </div>
-                        <div class="stc-card stc-critical">
-                            <p class="stc-card-num">26.719</p>
-                            <p class="stc-card-title">Critical</p>
+                    <div class="statistic">
+                        <div class="stc-card-container">
+                            <div class="card">
+                                <div class="stc-card stc-infect">
+                                    <p class="stc-card-num">2,329,651</p>
+                                    <p class="stc-card-title">Infections</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="stc-card stc-death">
+                                    <p class="stc-card-num">160,721</p>
+                                    <p class="stc-card-title">Deaths</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="stc-card stc-recover">
+                                    <p class="stc-card-num">595,433</p>
+                                    <p class="stc-card-title">Recoveries</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="stc-card stc-active">
+                                    <p class="stc-card-num">26,719</p>
+                                    <p class="stc-card-title">Critical</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+        
                 <div class="us-cases">
-                    <h1>In the united states</h1>
+                    <h1>In the united states <img src="./assets/flags/US.png" alt="US" width="30" height="30"></h1>
                     <div class="stc-card-container">
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">740.557 </p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="card">
+                            <div class="stc-card stc-infect">
+                                <p class="stc-card-num">740.557 </p>
+                                <p class="stc-card-title">Infections</p>
+                            </div>
                         </div>
-                        <div class="stc-card stc-death">
-                            <p class="stc-card-num">38.979</p>
-                            <p class="stc-card-title">Deaths</p>
+                        <div class="card">
+                            <div class="stc-card stc-death">
+                                <p class="stc-card-num">38.979</p>
+                                <p class="stc-card-title">Deaths</p>
+                            </div>
                         </div>
                     </div>
                     <div class="us-sort">
-                        <p class="sort-title">Search by the USA States</p>
-                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                        <input type="text" autocomplete="off" placeholder="Search by the USA States" class="search-input" value="">
+                        <div class="sort-by">
+                            Sort By
+                            <i class="fas fa-sort"></i>
+                        </div>
                     </div>
                 </div>
+        
                 <div class="japan-cases">
-                    <h1>In Japan</h1>
+                    <h1>In Japan <img src="./assets/flags/JP.png" alt="Japan" width="30" height="30"></h1>
                     <div class="stc-card-container">
-                        <div class="stc-card stc-infect">
-                            <p class="stc-card-num">10.437</p>
-                            <p class="stc-card-title">Infections</p>
+                        <div class="card">
+                            <div class="stc-card stc-infect">
+                                <p class="stc-card-num">10.437</p>
+                                <p class="stc-card-title">Infections</p>
+                            </div>
                         </div>
-                        <div class="stc-card stc-death">
-                            <p class="stc-card-num">63</p>
-                            <p class="stc-card-title">Deaths</p>
+                        <div class="card">
+                                <div class="stc-card stc-death">
+                                <p class="stc-card-num">63</p>
+                                <p class="stc-card-title">Deaths</p>
+                            </div>  
                         </div>
                     </div>
                     <div class="japan-sort">
-                        <p class="sort-title">Search by Prefecture 県</p>
-                        <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
+                        <input type="text" autocomplete="off" placeholder="Search by Prefecture 県" class="search-input" value="">
+                        <div class="sort-by">
+                            Sort By
+                            <i class="fas fa-sort"></i>
+                        </div>
                     </div>
-                </div>
-                <p class="update">update 5 minutes ago</p>
-                <div class="country-sort">
-                    <p class="sort-title">Search by country</p>
-                    <button class="sort-button">Sort By<i class="fas fa-sort"></i></button>
                 </div>
             </div>
 
-            <div class="card countries">
-                <div class="countries-title">
-                    <h1>Covid-19 Cases</h1>
-                    <h1>Today's Stats</h1>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>USA</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+            <div class="countries">
+                <div class="search-contry">
+                    <div class="update">last update 3 hours ago</div>
+                    <div class="countries-title">
+                        <span class="title">Covid-19 Cases</span>
+                        <span class="subtitle">Today's Stats</span>
                     </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
+                    <input type="text" autocomplete="off" placeholder="Search by Country" class="search-input" value="">
+                    <div class="sort-by">
+                        Sort By
+                        <i class="fas fa-sort"></i>
                     </div>
                 </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Austria</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
+        
+                <div class="country-area">
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>98%</span></p>
-                        <p class="deaths">+5 Deaths <span class="percent"><i class="fas fa-angle-double-down icon-down"></i>98%</span></p>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Denmark</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Mexico</h2>
-                        <p><span class="cases">142,735 Cases</span> & <span class="deaths">2489 Deaths</span></p>
-                    </div>
-                    <div class="stats">
-                        <p class="cases">+275 Cases <span class="percent"><i class="fas fa-angle-double-up icon-up"></i>13%</span></p>
-                    </div>
-                </div>
-    
-                <div class="full-country-container">
-                    <ul class="country">
-                        <li class="name">Mexico</li>
-                        <li class="total">
-                            <span class="stat">41,494</span>
-                            <span class="subtitle">Total Cases</span>
-                        </li>
-                        <li class="deaths">
-                            <span class="stat">3,455</span>
-                            <span class="subtitle">Deaths</span>
-                        </li>
-                        <li class="active">
-                            <span class="stat">13.322</span>
-                            <span class="subtitle">Active</span>
-                        </li>
-                        <li class="recover">
-                            <span class="stat">3.533</span>
-                            <span class="subtitle">Recoveries</span>
-                        </li>
-                        <li class="closed">
-                            <span class="stat">3.533</span>
-                            <span class="subtitle">Closed Cases</span>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Philippines</h2>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Switzerland</h2>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>Israel</h2>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>S. Korea</h2>
-                    </div>
-                </div>
-                <div class="countries-container">
-                    <div class="country">
-                        <h2>New Zeland</h2>
-                    </div>
-                </div>
 
-                <div class="coffe">
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="country-item">
+                        <div class="item-overlay">
+                            <div class="overlay-blocks overlay-flag">
+                                <img src="./assets/flags/US.png" alt="USA" width="30" height="30">
+                                <span class="blocks-subtitle country-name">USA</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                2,653,392 
+                                <span class="blocks-subtitle">Infections</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                128,566 
+                                <span class="blocks-subtitle">Deaths</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                1,099,219
+                                <span class="blocks-subtitle">Recoveries</span>
+                            </div>
+                            <div class="overlay-blocks">
+                                15,791
+                                <span class="blocks-subtitle">Critical</span>
+                            </div>
+                        </div>
+            
+                        <div class="item-flag">
+                            <img src="./assets/flags/US.png" alt="" width="30" height="30">
+                        </div>
+            
+                        <div class="item-details">
+                            <div class="details-title"> USA </div>
+                            <div class="details-stats">
+                                <span class="cases-subtitle">2,653,392 Cases</span>
+                                <span class="ampers">&</span>
+                                <span class="death-subtitle">128,566 Deaths</span>
+                            </div>
+                        </div>
+            
+                        <div class="details-update">
+                            <span class="new-cases">
+                                +16,315 Cases
+                                <span class="percent positive"><i class="fas fa-caret-up"></i>98%</span>
+                            </span>
+            
+                            <span class="new-deaths">
+                                +129 Deaths
+                                <span class="percent negative"><i class="fas fa-caret-down"></i>98%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card coffe">
+                <div class="coffe-container">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="dark" src="./assets/img/coffe390x65.png" alt="Buy me a coffe" width="390" height="65">
-                        <img class="light" src="./assets/img/coffe390x65_light.png" alt="Buy me a coffe" width="390" height="65">
+                        <img class="dark" src="./assets/img/coffe350x79.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
+                        <img class="light" src="./assets/img/coffe350x79_light.png" alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io">
                     </a>
                 </div>
             </div>
-
-            <div class="card chartmap">
-                <div id="chartdiv" class="chartdiv-map"></div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
