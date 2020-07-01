@@ -217,7 +217,7 @@
 		padding: 0 20px;
 		text-align: center;
 		line-height: 1.1; }
-	.social-media { margin: 10px 0 5px; }
+	.social-media { margin: 10px 0; }
 	.social-media ul {
 		display: flex;
 		justify-content: space-evenly;
