@@ -14,12 +14,12 @@
 	.chartdiv-map {
         width: calc(100vw - 1510px); }
 
-	.logo-area {
+	.header-desktop.logo-area {
 		padding: 15px;
 		max-height: 200px;
 		margin: 0 0 20px; }
 
-	.news{ padding: 35px 30px; }
+	.news { padding: 35px 30px; }
 	.news .news-header {
 		font-size: 1.2rem;
 		margin-bottom: 40px; }
@@ -31,15 +31,16 @@
     .news-item-container .news-item { 
         padding: 0 20px;
         margin-bottom: 30px; }
-    .news-item-container .news-item img {
+    .news-item-container .news-item .img-box {
     	width: 280px;
+    	height: auto;
     	margin: 0 auto 10px; }
     .news-item-container .news-item .item-box {
 		width: 280px;
 		padding: 5px; }
-    .news-item-container .news-item h1 {
+    .news-item-container .news-item .item-box h1 {
     	font-size: 1.2rem;
-    	width: 180px; }
+    	max-height: 100%; }
     .news-item-container .news-item h3 { font-size: 1.2rem; }
 
     .headlines-container .headlines-item {  margin-bottom: 20px; }
@@ -48,16 +49,22 @@
 
 	.advice {
 		padding: 10px 10px 10px 50px;
-		max-height:80px; }
-	.advice .fa-exclamation-triangle {
-		left: 30px;
-		font-size: 28px;
-		top: 25px; }
+		max-height:100px; }
+	.advice .fa-exclamation-triangle { font-size: 40px; }
+	.advice .advice-container h2 { 
+	    font-size: 1.2em;
+	    line-height: 1.3; }
+	.advice .advice-container p { font-size: 0.9em; }
+	.advice .advice-container p span { font-size: 0.85em; }
 	.advice .advice-button {
 		width: 60px;
-		height: 60px; }
+		height: calc(100% - 18px); }
+    .advice .advice-content p {
+        top: 95px;
+        font-size: 1.3em;
+        padding: 15px;
+        line-height: 1.5; }
 
-	.app .app-container {  padding: 20px 30% 20px 20px; }
 	.app .app-container .fa-mobile-alt { 
 	    font-size: 8em;
 	    top: 50%;

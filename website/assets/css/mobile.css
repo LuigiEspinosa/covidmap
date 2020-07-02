@@ -1,7 +1,18 @@
 @media (max-width: 1399px) {
-	.desktop { display: none; }
+    .left-column,
+    .card.nightmode-desktop,
+    .card.stats,
+    .card.coffe,
+    .chartmap { display: none; }
 
-	.logo-area { padding: 15px 15px 0;  }
+    .logo-area,
+    .main-footer { display: block; }
+
+    .right-column { 
+        width: 100%;
+        display: flex; } 
+
+	.logo-area { padding: 15px  10px;  }
 	header {
 		align-items: center;
 		display: inline-flex;
@@ -14,6 +25,8 @@
 	header .logo-header img.light,
 	.light header .logo-header img.dark { display: none; } 
 	.light header .logo-header img.light { display: block; }
+
+	.nightmode { background: transparent; }
 
 	.toggle-wrapper {
 		align-items: center;
@@ -114,17 +127,9 @@
 	.stc-active .stc-card-num { color: #ffc928; }
 	.light .stc-active .stc-card-num { color: #c5970d; }
 
-	.sidebar-section {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		height: calc(100vh - 295px);
-		justify-content: flex-start;
-		padding: 0 15px 15px;
-		position: absolute;
-		width: 100%; }
-
-	.countries { width: 100%; }
+	.countries { 
+	    width: 100%;
+	    padding: 0 10px; }
 	.search-contry {
 		background: #262439;
 		border-radius: 4px;
@@ -134,8 +139,7 @@
 		width: 100%;
 		align-items: center;
 		margin-bottom: 15px;
-		box-shadow: none;
-		margin-top:  }
+		box-shadow: none;  }
 	.light .search-contry { background: #ccc; }
 	.search-contry .update {
 		position: absolute;
@@ -355,7 +359,7 @@
 		margin-top: 2px;
 		padding: 10px;
 		position: fixed;
-		width: calc(100% - 30px); }
+		width: calc(100% - 5px); }
 	.main-footer footer {
 		width: calc(100% - 5px);
 		display: grid;
@@ -429,7 +433,8 @@
 	.main-footer footer .app-link a:hover i { color: #e85338; }
 	.main-footer footer .social-media {
 		grid-area: social;
-		padding: 5px 10px; }
+		padding: 5px 10px;
+		margin: 0; }
 	.main-footer footer .social-media ul {
 		display: flex;
 		justify-content: space-evenly;
@@ -467,6 +472,7 @@
 	.main-footer footer .social-media ul li.dribble { border: 1px solid #ea4c89; }
 	.main-footer footer .social-media ul li.dribble:hover { background: #ea4c89; }
 	.main-footer footer .social-media p {
+		margin-top: 0;
 		text-align: center;
 		font-size: 1em; }
 
