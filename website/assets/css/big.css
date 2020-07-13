@@ -66,10 +66,11 @@
         line-height: 1.5; }
 
 	.app .app-container .fa-mobile-alt { 
-	    font-size: 8em;
+	    font-size: 6em!important;
 	    top: 50%;
 	    margin-top: -60px;
 	    right: 10%; }
+    .app .app-container .install-app span { font-size: 1em; }
 	.app .app-container h1 { 
 		font-size: 1.2rem;
 		margin-bottom: 30px;
@@ -79,12 +80,6 @@
 		font-size: 1.5rem;
 		padding-left: 80px;
 		margin-bottom: 30px; }
-	.app .app-container .app-items i {
-		font-size: 0.8rem;
-		width: 30px;
-		height: 30px;
-		left: 23px;
-		top: 8px; }
 
 	.social { padding: 10px; }
 	.social .social-header { margin-bottom: 30px; }

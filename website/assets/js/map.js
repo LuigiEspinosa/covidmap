@@ -27,7 +27,7 @@ am4core.ready(function() {
 	  var currentCountry = "Earth";
 	
 	  // last date of the data
-	  var lastDate = new Date(covid_total_timeline[covid_total_timeline.length - 1].date);
+	  var lastDate = new Date();
 	  var currentDate = lastDate;
 	
 	  var currentPolygon;
@@ -1211,8 +1211,8 @@ am4core.ready(function() {
 	  // update total values in buttons
 	  function updateTotals(index) {
 		if (!isNaN(index)) {
-		  var di = covid_total_timeline[index];
-		  var date = new Date(di.date);
+		//   var di = covid_total_timeline[index];
+		  var date = new Date();
 		  currentDate = date;
 	
 		  updateCountryName();
