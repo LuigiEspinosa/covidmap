@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <div class="left-column"><h2 class="card">Left Column</h2></div>
+    <LeftColumn />
 
     <div class="card chartmap">
       <div id="chartdiv" class="chartdiv-map"><h2>Center Column</h2></div>
@@ -11,7 +11,10 @@
 </template>
 
 <script>
+import LeftColumn from '../components/columns/LeftColumn.vue'
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: { LeftColumn }
 }
 </script>

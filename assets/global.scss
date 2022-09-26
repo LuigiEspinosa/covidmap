@@ -89,35 +89,23 @@ body {
   border-radius: 8px;
 }
 
-.card.logo-area {
+.card.news {
   animation-delay: calc(1 * var(--stagger-delay));
 }
-.card.news {
+.card.coffe {
   animation-delay: calc(2 * var(--stagger-delay));
 }
-.card.advice {
+.countries {
   animation-delay: calc(3 * var(--stagger-delay));
 }
-.card.app {
+.card.stats {
   animation-delay: calc(4 * var(--stagger-delay));
 }
-.card.social {
+.card.nightmode {
   animation-delay: calc(5 * var(--stagger-delay));
 }
-.card.coffe {
-  animation-delay: calc(6 * var(--stagger-delay));
-}
-.countries {
-  animation-delay: calc(7 * var(--stagger-delay));
-}
-.card.stats {
-  animation-delay: calc(8 * var(--stagger-delay));
-}
-.card.nightmode {
-  animation-delay: calc(9 * var(--stagger-delay));
-}
 .card.chartmap {
-  animation-delay: calc(10 * var(--stagger-delay));
+  animation-delay: calc(6 * var(--stagger-delay));
 }
 
 @media (max-width: $breakpoint-large) {
