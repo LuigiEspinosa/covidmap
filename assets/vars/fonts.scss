@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'SF Compact Display Light';
+  src: url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.eot');
+  src: url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.eot#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.woff2') format('woff2'),
+    url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.woff') format('woff'),
+    url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.ttf')
+      format('truetype'),
+    url('~/assets/fonts/1ae4a10df3a35a7ac5a8032c64f3c801.svg#SF Compact Display')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'SF Compact Display Regular';
+  src: url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.eot');
+  src: url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.woff2') format('woff2'),
+    url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.woff') format('woff'),
+    url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.ttf')
+      format('truetype'),
+    url('~/assets/fonts/23c8ec0d7b298e340b59bd32a7e661f3.svg#SF Compact Display')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'SF Compact Display Medium';
+  src: url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.eot');
+  src: url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.woff2') format('woff2'),
+    url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.woff') format('woff'),
+    url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.ttf')
+      format('truetype'),
+    url('~/assets/fonts/5ec2f3312f239da77e9f457fee061c0c.svg#SF Compact Display')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'SF Compact Display Semibold';
+  src: url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.eot');
+  src: url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.eot?#iefix')
+      format('embedded-opentype'),
+    url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.woff2') format('woff2'),
+    url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.woff') format('woff'),
+    url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.ttf')
+      format('truetype'),
+    url('~/assets/fonts/98b8860736a2ad9b96a0357c9007d1ec.svg#SF Compact Display')
+      format('svg');
+}
+
+@mixin SF-Light {
+  font-family: 'SF Compact Display Light';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin SF-Regular {
+  font-family: 'SF Compact Display Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin SF-Medium {
+  font-family: 'SF Compact Display Medium';
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@mixin SF-Semibold {
+  font-family: 'SF Compact Display Semibold';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}

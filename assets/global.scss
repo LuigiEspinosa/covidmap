@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-dark-grey;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+body {
+  @include SF-Regular;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.main {
+  background: $color-purple;
+  color: $color-white;
+  overflow: hidden;
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  width: 330px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  height: 100vh;
+
+  & > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+}
+
+.chartdiv-map {
+  width: calc(100vw - 670px);
+  height: calc(100vh - 10px);
+  background-color: $color-purple;
+  display: block;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/*** ANIMATIONS **/
+
+body {
+  --stagger-delay: 200ms;
+}
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.card {
+  animation: cardEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
+  border-radius: 8px;
+}
+
+.card.logo-area {
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+.card.news {
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+.card.advice {
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+.card.app {
+  animation-delay: calc(4 * var(--stagger-delay));
+}
+.card.social {
+  animation-delay: calc(5 * var(--stagger-delay));
+}
+.card.coffe {
+  animation-delay: calc(6 * var(--stagger-delay));
+}
+.countries {
+  animation-delay: calc(7 * var(--stagger-delay));
+}
+.card.stats {
+  animation-delay: calc(8 * var(--stagger-delay));
+}
+.card.nightmode {
+  animation-delay: calc(9 * var(--stagger-delay));
+}
+.card.chartmap {
+  animation-delay: calc(10 * var(--stagger-delay));
+}
+
+@media (max-width: $breakpoint-large) {
+  .left-column,
+  .chartmap {
+    display: none;
+  }
+
+  .right-column {
+    width: 100%;
+    display: flex;
+  }
+}
