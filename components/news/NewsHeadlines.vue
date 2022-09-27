@@ -1,87 +1,76 @@
 <template>
-  <ul class="headlines-container">
-    <li class="headlines-item">
-      <a href="#" target="_blank" rel="noopener noreferrer">
+  <div class="headlines">
+    <p v-if="$fetchState.pending">Fetching news...</p>
+    <p v-else-if="$fetchState.error">An error occurred :(</p>
+    <ul v-else class="headlines-container">
+      <li v-for="(nws, idx) in news" :key="idx" class="headlines-item">
         <h2>
-          Willow Smith ventures out of coronavirus isolation with boyfriend
-          Tyler Cole
+          <a :href="nws.url" target="_blank" rel="noopener noreferrer">
+            {{ nws.title }} - <span>{{ getDate(nws.publishedAt) }}</span>
+          </a>
         </h2>
-        <h3>17 minutes ago</h3>
-      </a>
-    </li>
-    <li class="headlines-item">
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <h2>
-          Willow Smith ventures out of coronavirus isolation with boyfriend
-          Tyler Cole
-        </h2>
-        <h3>17 minutes ago</h3>
-      </a>
-    </li>
-    <li class="headlines-item">
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <h2>
-          Willow Smith ventures out of coronavirus isolation with boyfriend
-          Tyler Cole
-        </h2>
-        <h3>17 minutes ago</h3>
-      </a>
-    </li>
-    <div class="big-screen">
-      <li class="headlines-item">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <h2>
-            Willow Smith ventures out of coronavirus isolation with boyfriend
-            Tyler Cole
-          </h2>
-          <h3>17 minutes ago</h3>
-        </a>
       </li>
-      <li class="headlines-item">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <h2>
-            Willow Smith ventures out of coronavirus isolation with boyfriend
-            Tyler Cole
-          </h2>
-          <h3>17 minutes ago</h3>
-        </a>
-      </li>
-    </div>
-  </ul>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'NewsHeadlines'
+  name: 'NewsHeadlines',
+
+  data() {
+    return {
+      news: []
+    }
+  },
+
+  async fetch() {
+    const URL = `https://newsapi.org/v2/everything?q=coronavirus&sortBy=relevancy&apiKey=${process.env.NEWS_API_KEY}`
+    const news = await fetch(URL).then(res => res.json())
+    this.news = news.articles
+  },
+
+  methods: {
+    getDate(date) {
+      const objectDate = new Date(date)
+      const day = objectDate.getDate()
+      const month = objectDate.getMonth() + 1
+      const year = objectDate.getFullYear()
+
+      return `${month}/${day}/${year}`
+    }
+  }
 }
 </script>
 
 <style lang="scss">
 .headlines-container {
-  margin-top: 10px;
+  width: 100%;
+  max-height: calc(100vh - 180px - 8rem);
+  overflow-y: scroll;
+  padding-right: 1rem;
+  margin-top: 2rem;
 
   .headlines-item {
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 
     h2 {
       @include SF-Light;
       color: $color-grey;
-      font-size: 0.625em;
-      line-height: 1.3;
-      transition: 0.5s ease;
-      max-height: 15px;
-      overflow: hidden;
-    }
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
 
-    h3 {
-      font-size: 0.58em;
-      color: $color-orange;
-    }
+      a {
+        color: $color-white;
 
-    a {
-      color: $color-white;
+        :hover h2 {
+          color: $color-orange;
+        }
+      }
 
-      :hover h2 {
+      span {
         color: $color-orange;
       }
     }

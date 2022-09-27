@@ -24,6 +24,6 @@ export default {
   @include SF-Light;
   padding: 0.4em 1em;
   position: relative;
-  margin: 4em 0;
+  margin: 2em 0;
 }
 </style>
