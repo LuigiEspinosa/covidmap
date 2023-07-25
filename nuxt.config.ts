@@ -2,7 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/image"],
-  routeRules: {
-    // Route Redirects, Headers and SSR
-  },
+  css: ["@/assets/main.css"],
 });
