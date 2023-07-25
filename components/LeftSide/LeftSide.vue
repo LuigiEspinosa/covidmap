@@ -3,7 +3,7 @@
     <div class="card logo-area header-desktop">
       <div class="logo-header">
         <a href="#">
-          <img
+          <!-- <img
             class="dark"
             src="./assets/img/logo650x121.png"
             alt="Coronavirus App"
@@ -16,7 +16,7 @@
             alt="Coronavirus App"
             width="650"
             height="121"
-          />
+          /> -->
         </a>
       </div>
     </div>
@@ -36,12 +36,12 @@
           <a href="#" target="_blank" rel="noopener noreferrer">
             <div class="news-item">
               <div class="img-box">
-                <img
+                <!-- <img
                   src="./assets/img/news260x159.png"
                   alt="News RSS Feed"
                   width="260"
                   height="159"
-                />
+                /> -->
               </div>
               <div class="item-box">
                 <h1>Myanmar reports first corona virus death</h1>
@@ -52,12 +52,12 @@
           <a href="#" target="_blank" rel="noopener noreferrer">
             <div class="news-item">
               <div class="img-box">
-                <img
+                <!-- <img
                   src="./assets/img/news2-260x159.png"
                   alt="News RSS Feed"
                   width="260"
                   height="159"
-                />
+                /> -->
               </div>
               <div class="item-box">
                 <h1>Myanmar reports first corona virus death</h1>

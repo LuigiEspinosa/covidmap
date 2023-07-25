@@ -4,7 +4,7 @@
       <header>
         <div class="logo-header">
           <a href="#">
-            <img
+            <!-- <img
               class="dark"
               src="./assets/img/logo650x122.png"
               alt="Coronavirus App"
@@ -17,7 +17,7 @@
               alt="Coronavirus App"
               width="650"
               height="122"
-            />
+            /> -->
           </a>
         </div>
 
@@ -92,21 +92,21 @@
           <div class="flag">
             <div class="jp">
               JP
-              <img
+              <!-- <img
                 src="./assets/flags/JP.png"
                 alt="Japan"
                 width="30"
                 height="30"
-              />
+              /> -->
             </div>
             <div class="us">
               US
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="US"
                 width="30"
                 height="30"
-              />
+              /> -->
             </div>
           </div>
           <i class="fas fa-angle-up"></i>
@@ -150,7 +150,7 @@
       <div class="us-cases">
         <h1>
           In the united states
-          <img src="./assets/flags/US.png" alt="US" width="30" height="30" />
+          <!-- <img src="./assets/flags/US.png" alt="US" width="30" height="30" /> -->
         </h1>
         <div class="stc-card-container">
           <div class="card">
@@ -218,7 +218,7 @@
       <div class="japan-cases">
         <h1>
           In Japan
-          <img src="./assets/flags/JP.png" alt="Japan" width="30" height="30" />
+          <!-- <img src="./assets/flags/JP.png" alt="Japan" width="30" height="30" /> -->
         </h1>
         <div class="stc-card-container">
           <div class="card">
@@ -342,12 +342,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -369,7 +369,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -401,12 +401,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -428,7 +428,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -460,12 +460,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -487,7 +487,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -519,12 +519,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -546,7 +546,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -578,12 +578,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -605,7 +605,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -637,12 +637,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -664,7 +664,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -696,12 +696,12 @@
         <div class="country-item">
           <div class="item-overlay">
             <div class="overlay-blocks overlay-flag">
-              <img
+              <!-- <img
                 src="./assets/flags/US.png"
                 alt="USA"
                 width="30"
                 height="30"
-              />
+              /> -->
               <span class="blocks-subtitle country-name">USA</span>
             </div>
             <div class="overlay-blocks">
@@ -723,7 +723,7 @@
           </div>
 
           <div class="item-flag">
-            <img src="./assets/flags/US.png" alt="" width="30" height="30" />
+            <!-- <img src="./assets/flags/US.png" alt="" width="30" height="30" /> -->
           </div>
 
           <div class="item-details">
@@ -757,7 +757,7 @@
     <div class="card coffe">
       <div class="coffe-container">
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <img
+          <!-- <img
             class="dark"
             src="./assets/img/coffe390x65.png"
             alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io"
@@ -766,7 +766,7 @@
             class="light"
             src="./assets/img/coffe390x65_light.png"
             alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io"
-          />
+          /> -->
         </a>
       </div>
     </div>
@@ -775,7 +775,7 @@
       <footer class="footer">
         <div class="support">
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img
+            <!-- <img
               class="dark"
               src="./assets/img/coffe350x79.png"
               alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io"
@@ -784,7 +784,7 @@
               class="light"
               src="./assets/img/coffe350x79_light.png"
               alt="Buy me a coffe, Help keep the project alive | Coronavirusapp.io"
-            />
+            /> -->
           </a>
         </div>
 
