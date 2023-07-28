@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/" class="flex flex-col">
+  <nuxt-link to="https://cuatro.dev/blog" class="flex flex-col">
     <nuxt-img
       v-if="dark"
       src="/white-logo.png"

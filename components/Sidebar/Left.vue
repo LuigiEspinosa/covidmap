@@ -1,9 +1,9 @@
 <template>
   <section class="flex flex-col h-screen">
-    <div class="hidden xl:block w-[350px] max-h-screen">
+    <div class="hidden lg:block w-[220px] xl:w-[350px] max-h-screen">
       <div class="h-full min-h-full flex flex-col">
         <div class="p-2 mt-4 mb-2 mx-auto max-w-[80%] h-auto">
-          <LogoCuatro :dark="dark" />
+          <Logo :dark="dark" />
         </div>
 
         <Box custom="flex-1 overflow-auto min-h-fit">
@@ -34,10 +34,10 @@
         <Box>
           <template #box>
             <div class="text-center text-black dark:text-white">
-              <h2 class="font-semibold text-[1.6em] my-2">
+              <h2 class="font-semibold text-[1.6em] leading-8 mb-4">
                 THIS IS NO LONGER WORKING
               </h2>
-              <p class="text-[1em] px-5">
+              <p class="text-[1em]">
                 Most of the APIs are not longer collecting new data. Read more
                 here:
                 <nuxt-link
@@ -50,7 +50,7 @@
             </div>
 
             <div class="mt-4">
-              <ul class="flex items-center justify-evenly my-3">
+              <ul class="flex flex-wrap items-center justify-evenly my-3">
                 <li>
                   <nuxt-link
                     class="contactLink"

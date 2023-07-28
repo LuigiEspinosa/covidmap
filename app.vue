@@ -11,7 +11,7 @@
             <Chart />
           </div>
 
-          <div class="hidden xl:block w-[350px] max-h-screen">
+          <div class="block w-[220px] xl:w-[350px] max-h-screen">
             Right Sidebar
           </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <section class="hidden xl:flex w-full h-full">
+  <section class="hidden lg:flex w-full h-full">
     <div
       id="chartdiv"
       class="bg-[#ccc] dark:bg-[#262439] my-4 rounded-lg flex-1 overflow-hidden"
