@@ -1,15 +1,42 @@
 <template>
   <section class="flex flex-col h-screen">
-    <div class="hidden xl:block w-[350px]">
-      <div class="sticky top-0">
-        <div class="p-2 my-2 max-w-[70%] h-auto">
+    <div class="hidden xl:block w-[350px] max-h-screen">
+      <div class="h-full min-h-full flex flex-col">
+        <div class="p-2 mt-4 mb-2 mx-auto max-w-[80%] h-auto">
           <LogoCuatro :dark="dark" />
         </div>
 
+        <Box custom="flex-1 overflow-auto min-h-fit">
+          <template #box>
+            <h2
+              class="font-semibold uppercase text-[#2ab75b] text-[1.6em] my-2"
+            >
+              Latest News
+            </h2>
+
+            <ul class="mt-3">
+              <li class="mb-2">
+                <nuxt-link
+                  href="/"
+                  target="_blank"
+                  class="text-black dark:text-white group"
+                >
+                  <h2 class="group-hover:text-[#2ab75b] text-[1.2em]">
+                    API TITLE
+                  </h2>
+                  <h3 class="text-[#2ab75b] text-[1em]">API NEWS' DATE</h3>
+                </nuxt-link>
+              </li>
+            </ul>
+          </template>
+        </Box>
+
         <Box>
           <template #box>
-            <div class="font-normal text-center text-blank dark:text-white">
-              <h2 class="text-[1.6em] my-2">THIS IS NO LONGER WORKING</h2>
+            <div class="text-center text-black dark:text-white">
+              <h2 class="font-semibold text-[1.6em] my-2">
+                THIS IS NO LONGER WORKING
+              </h2>
               <p class="text-[1em] px-5">
                 Most of the APIs are not longer collecting new data. Read more
                 here:

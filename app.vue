@@ -3,9 +3,17 @@
     <div class="bg-white dark:bg-dim-900">
       <div class="min-h-full">
         <div
-          class="grid grid-cols-12 mx-auto sm:px-6 lg:mx-w-7xl lg:px-8 lg:gap-5"
+          class="flex mx-auto sm:px-4 sm:space-x-4 justify-between content-around flex-wrap"
         >
           <SidebarLeft :dark="darkMode" />
+
+          <div class="flex-1">
+            <Chart />
+          </div>
+
+          <div class="hidden xl:block w-[350px] max-h-screen">
+            Right Sidebar
+          </div>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@
       format="png"
       preload
     />
-    <span class="font-normal text-black dark:text-white mt-2 ml-auto self-end"
+    <span class="text-black dark:text-white mt-2 ml-auto self-end"
       >CovidMap</span
     >
   </nuxt-link>
