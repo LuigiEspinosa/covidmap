@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom classNames */
+@layer components {
+  .contactLink {
+    @apply text-black dark:text-white hover:text-[#2ab75b] text-[1em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
+  }
+}
