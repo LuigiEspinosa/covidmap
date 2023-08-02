@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom classNames */
+@layer components {
+  .contactLink {
+    @apply text-black dark:text-white hover:text-[#2ab75b] hover:dark:text-[#2ab75b] text-[1em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
+  }
+
+  .toggleTheme {
+    &:before {
+      content: "";
+      @apply bg-[#444] absolute rounded-full bottom-[4.5px] left-[6px] w-6 h-6 transition;
+    }
+  }
+
+  .toggleInput {
+    &:checked {
+      + .toggleTheme {
+        @apply bg-white;
+
+        &:before {
+          @apply translate-x-7;
+        }
+      }
+    }
+  }
+
+  #infection {
+    .casesStats {
+      @apply text-[#a57af2];
+    }
+  }
+
+  #death {
+    .casesStats {
+      @apply text-[#ea536f];
+    }
+  }
+
+  #recover {
+    .casesStats {
+      @apply text-[#7fcc88];
+    }
+  }
+
+  #active {
+    .casesStats {
+      @apply text-[#ffc928];
+    }
+  }
+
+  .overlayBlocks {
+    @apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap w-[20%];
+  }
+}

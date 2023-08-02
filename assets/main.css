@@ -71,14 +71,14 @@ a {
   text-decoration: none;
 }
 
-body {
+section {
   background: rgb(35, 27, 52);
   color: #fff;
   font-family: "SF Compact Display Regular";
   overflow: hidden;
   display: flex;
 }
-body.light {
+section.light {
   background: #fff;
   color: #000;
 }
@@ -1194,7 +1194,7 @@ body.light {
 
 /*** ANIMATIONS **/
 
-body {
+section {
   --stagger-delay: 200ms;
 }
 

@@ -1,7 +1,5 @@
 <template>
-  <body>
-    <LeftSide />
-    <Chart />
-    <RightSide />
-  </body>
+  <NuxtLayout>
+    <NuxtPage keepalive include="index" />
+  </NuxtLayout>
 </template>

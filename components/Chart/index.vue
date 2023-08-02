@@ -1,7 +1,12 @@
 <template>
-  <div class="card chartmap">
-    <div id="chartdiv" class="chartdiv-map"></div>
-  </div>
+  <section class="hidden lg:flex flex-1">
+    <div class="flex w-full h-full">
+      <div
+        id="chartdiv"
+        class="bg-[#ccc] dark:bg-[#262439] my-4 rounded-lg flex-1 overflow-hidden"
+      />
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -31,13 +36,12 @@ onMounted(() => {
   am4core.ready(function () {
     // Themes begin
     am4core.useTheme(am4themes_animated);
-    // Themes end
 
     am4core.ready(function () {
       var numberFormatter = new am4core.NumberFormatter();
 
       var backgroundColor = am4core.color("#1e2128");
-      var activeColor = am4core.color("#ff8726");
+      var activeColor = am4core.color("#2ab75b");
       var confirmedColor = am4core.color("#d21a1a");
       var recoveredColor = am4core.color("#45d21a");
       var deathsColor = am4core.color("#1c5fe5");
@@ -140,12 +144,6 @@ onMounted(() => {
         }
         max.active = max.confirmed;
       }
-
-      // END OF DATA
-
-      //////////////////////////////////////////////////////////////////////////////
-      // LAYOUT & CHARTS
-      //////////////////////////////////////////////////////////////////////////////
 
       // main container
       // https://www.amcharts.com/docs/v4/concepts/svg-engine/containers/
@@ -331,8 +329,6 @@ onMounted(() => {
         return longitude;
       });
 
-      // END OF MAP
-
       // top title
       var title = mapChart.titles.create();
       title.fontSize = "1.5em";
@@ -498,6 +494,7 @@ onMounted(() => {
       // play button
       var playButton = sliderContainer.createChild(am4core.PlayButton);
       playButton.valign = "middle";
+
       // play button behavior
       playButton.events.on("toggled", function (event) {
         if (event.target.isActive) {
@@ -506,6 +503,7 @@ onMounted(() => {
           stop();
         }
       });
+
       // make slider grip look like play button
       slider.startGrip.background.fill = playButton.background.fill;
       slider.startGrip.background.strokeOpacity = 0;
@@ -703,10 +701,6 @@ onMounted(() => {
       dateAxis.tooltip.background.fill = activeColor;
       dateAxis.tooltip.background.stroke = activeColor;
       dateAxis.renderer.labels.template.fill = am4core.color("#ffffff");
-      /*
-	  dateAxis.renderer.labels.template.adapter.add("fillOpacity", function(fillOpacity, target){
-		  return dateAxis.valueToPosition(target.dataItem.value) + 0.1;
-	  })*/
 
       // value axis
       // https://www.amcharts.com/docs/v4/concepts/axes/value-axis/
@@ -1302,7 +1296,7 @@ onMounted(() => {
       // update total values in buttons
       function updateTotals(index) {
         if (!isNaN(index)) {
-          //   var di = covid_total_timeline[index];
+          // var di = covid_total_timeline[index];
           var date = new Date();
           currentDate = date;
 
@@ -1330,7 +1324,7 @@ onMounted(() => {
 
       // update map data
       function updateMapData(data) {
-        //modifying instead of setting new data for a nice animation
+        // modifying instead of setting new data for a nice animation
         bubbleSeries.dataItems.each(function (dataItem) {
           dataItem.dataContext.confirmed = 0;
           dataItem.dataContext.deaths = 0;
@@ -1439,8 +1433,6 @@ onMounted(() => {
       // set initial data and names
       updateCountryName();
       changeDataType("active");
-      //populateCountries(slideData.list);
-
       setTimeout(updateSeriesTooltip, 3000);
 
       function updateCountryTooltip() {
@@ -1449,39 +1441,6 @@ onMounted(() => {
           currentTypeName +
           " per million";
       }
-
-      /**
-       * Country/state list on the right
-       */
-      /*
-	  function populateCountries(list) {
-		var table = $("#areas tbody");
-		table.find(".area").remove();
-		for (var i = 0; i < list.length; i++) {
-		  var area = list[i];
-		  var tr = $("<tr>").addClass("area").data("areaid", area.id).appendTo(table).on("click", function() {
-			selectCountry(polygonSeries.getPolygonById($(this).data("areaid")));
-		  }).hover(function() {
-			rollOverCountry(polygonSeries.getPolygonById($(this).data("areaid")));
-		  });
-		  $("<td>").appendTo(tr).data("areaid", area.id).html(area.name);
-		  $("<td>").addClass("value").appendTo(tr).html(area.confirmed);
-		  $("<td>").addClass("value").appendTo(tr).html(area.deaths);
-		  $("<td>").addClass("value").appendTo(tr).html(area.recovered);
-	
-		}
-		$("#areas").DataTable({
-		  "paging": false,
-		  "select": true
-		}).column("1")
-		  .order("desc")
-		  .draw();;
-	  }
-	*/
-
-      //function idToName(id) {
-      //return am4geodata_data_countries2[id] ? am4geodata_data_countries2[id].country : id == "XX" ? "Others" : id;
-      //}
 
       function removeAntarctica(mapData) {
         for (var i = mapData.length - 1; i >= 0; i--) {
@@ -1746,6 +1705,6 @@ onMounted(() => {
         ZW: "13061000",
       };
     });
-  }); // end am4core.ready()
+  });
 });
 </script>
