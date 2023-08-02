@@ -28,22 +28,22 @@
 const worldCases = ref([
   {
     id: "infection",
-    stats: "2,329,651",
+    stats: "692,549,492",
     title: "Infections",
   },
   {
     id: "death",
-    stats: "160,721",
+    stats: "6,903,730",
     title: "Deaths",
   },
   {
     id: "recover",
-    stats: "595,433",
+    stats: "664,642,664",
     title: "Recoveries",
   },
   {
     id: "active",
-    stats: "26,719",
+    stats: "21,003,098",
     title: "Critical",
   },
 ]);

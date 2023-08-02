@@ -39,11 +39,7 @@
         </div>
 
         <div class="w-[30px] mr-4">
-          <!-- <img
-            :src="cases.flag"
-            :alt="`${cases.name} Flag`"
-            class="max-w-full"
-          /> -->
+          <img :src="cases.flag" :alt="`${cases.name} Flag`" class="max-w-full" />
         </div>
 
         <div
@@ -62,11 +58,6 @@
             <span class="text-[#ea536f] font-semibold">{{ cases.totalDeaths }} Deaths</span>
           </div>
         </div>
-
-        <div class="flex flex-col font-semibold text-xs mr-2 text-right">
-          <span class="text-[#a57af2] mb-2">{{ cases.newCases }} Cases</span>
-          <span class="text-[#ea536f]">{{ cases.newDeaths }} Deaths</span>
-        </div>
       </div>
     </div>
   </div>
@@ -75,61 +66,57 @@
 <script setup>
 const countryCard = ref([
   {
-    name: "USD",
-    flag: "",
-    totalCases: "2,653,392",
-    newCases: "+16,315",
-    totalDeaths: "128,566",
-    newDeaths: "+129",
+    name: "USA",
+    flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/2560px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png",
+    totalCases: "107,518,785",
+    totalDeaths: "1,169,841",
     stats: [
       {
         id: "infection",
-        stats: "2,329,651",
+        stats: "107,518,785",
         title: "Infections",
       },
       {
         id: "death",
-        stats: "160,721",
+        stats: "1,169,841",
         title: "Deaths",
       },
       {
         id: "recover",
-        stats: "595,433",
+        stats: "105,651,785",
         title: "Recoveries",
       },
       {
         id: "active",
-        stats: "26,719",
+        stats: "697,159",
         title: "Critical",
       },
     ],
   },
   {
     name: "Colombia",
-    flag: "",
-    totalCases: "2,653,392",
-    newCases: "+16,315",
-    totalDeaths: "128,566",
-    newDeaths: "+129",
+    flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/1920px-Flag_of_Colombia.svg.png",
+    totalCases: "6,376,239",
+    totalDeaths: "142,922",
     stats: [
       {
         id: "infection",
-        stats: "2,329,651",
+        stats: "6,376,239",
         title: "Infections",
       },
       {
         id: "death",
-        stats: "160,721",
+        stats: "142,922",
         title: "Deaths",
       },
       {
         id: "recover",
-        stats: "595,433",
+        stats: "6,190,683",
         title: "Recoveries",
       },
       {
         id: "active",
-        stats: "26,719",
+        stats: "42,634",
         title: "Critical",
       },
     ],
