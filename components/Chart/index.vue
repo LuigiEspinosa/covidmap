@@ -1,9 +1,11 @@
 <template>
-  <section class="hidden lg:flex w-full h-full">
-    <div
-      id="chartdiv"
-      class="bg-[#ccc] dark:bg-[#262439] my-4 rounded-lg flex-1 overflow-hidden"
-    />
+  <section class="hidden lg:flex flex-1">
+    <div class="flex w-full h-full">
+      <div
+        id="chartdiv"
+        class="bg-[#ccc] dark:bg-[#262439] my-4 rounded-lg flex-1 overflow-hidden"
+      />
+    </div>
   </section>
 </template>
 
@@ -39,7 +41,7 @@ onMounted(() => {
       var numberFormatter = new am4core.NumberFormatter();
 
       var backgroundColor = am4core.color("#1e2128");
-      var activeColor = am4core.color("#ff8726");
+      var activeColor = am4core.color("#2ab75b");
       var confirmedColor = am4core.color("#d21a1a");
       var recoveredColor = am4core.color("#45d21a");
       var deathsColor = am4core.color("#1c5fe5");
