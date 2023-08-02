@@ -4,6 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:local": "npx nuxi dev --dotenv .env.local",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +17,7 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "sass": "^1.64.1",
     "sass-loader": "^13.3.2"
   }

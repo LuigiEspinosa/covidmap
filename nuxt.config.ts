@@ -3,4 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/image", "@nuxtjs/tailwindcss"],
   css: ["@/assets/global.css"],
+
+  runtimeConfig: {
+    newsUrl: "",
+    newsApiKey: "",
+  },
 });
