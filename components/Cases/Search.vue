@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1 overflow-auto min-h-fit">
-    <div
+    <!-- <div
       class="items-center bg-[#ccc] dark:bg-[#262439] rounded-lg flex mb-4 relative w-full pl-4 pr-2"
     >
       <div
@@ -16,9 +16,9 @@
         placeholder="Search by Country"
         class="bg-transparent border-none text-black dark:text-white flex-1 text-base h-10 outline-0"
       />
-    </div>
+    </div> -->
 
-    <div class="bg-red mt-12 mb-4">
+    <!-- <div class="bg-red mt-12 mb-4">
       <div
         v-for="cases in countryCard"
         class="rounded-lg border border-transparent cursor-pointer w-full h-16 flex flex-none justify-between items-center relative group"
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
