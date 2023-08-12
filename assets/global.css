@@ -15,18 +15,6 @@
     }
   }
 
-  .toggleInput {
-    &:checked {
-      + .toggleTheme {
-        @apply bg-white;
-
-        &:before {
-          @apply translate-x-7;
-        }
-      }
-    }
-  }
-
   #infection {
     .casesStats {
       @apply text-[#a57af2];

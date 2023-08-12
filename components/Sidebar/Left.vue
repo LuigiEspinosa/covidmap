@@ -3,7 +3,7 @@
     <div class="block w-[220px] xl:w-[350px] max-h-screen">
       <div class="h-full min-h-full flex flex-col">
         <div class="p-2 mt-4 mb-2 mx-auto max-w-[80%] h-auto">
-          <Logo :dark="dark" />
+          <Logo />
         </div>
 
         <News />
@@ -74,13 +74,6 @@
 
 <script setup>
 import { ref } from "vue";
-
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: true,
-  },
-});
 
 const modalOpen = ref(false);
 
