@@ -3,7 +3,7 @@
     <div class="block w-[220px] xl:w-[350px] max-h-screen">
       <div class="h-full min-h-full flex flex-col">
         <div class="p-2 mt-4 mb-2 mx-auto max-w-[80%] h-auto">
-          <Logo :dark="dark" />
+          <Logo />
         </div>
 
         <News />
@@ -36,18 +36,15 @@
                   target="_blank"
                   >The COVID Tracking Project</nuxt-link
                 >
-                has ended all data collection as of March 7, 2021. The existing
-                API will continue to work until May 2021.
+                has ended all data collection as of March 7, 2021. The existing API will continue to
+                work until May 2021.
               </p>
             </div>
 
             <div class="mt-4">
               <ul class="flex flex-wrap items-center justify-evenly my-3">
                 <li>
-                  <nuxt-link
-                    class="contactLink"
-                    to="https://cuatro.dev/"
-                    target="_blank"
+                  <nuxt-link class="contactLink" to="https://cuatro.dev/" target="_blank"
                     >Cuatro.dev</nuxt-link
                   >
                 </li>
@@ -60,7 +57,7 @@
                   >
                 </li>
                 <li>
-                  <button class="contactLink">Stack</button>
+                  <button class="contactLink" @click="openModal">Stack</button>
                 </li>
               </ul>
             </div>
@@ -68,14 +65,19 @@
         </Box>
       </div>
     </div>
+
+    <UIModal :isOpen="modalOpen" @onClose="modalOpen = false">
+      <UIStack />
+    </UIModal>
   </section>
 </template>
 
 <script setup>
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: true,
-  },
-});
+import { ref } from "vue";
+
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
 </script>

@@ -1,7 +1,7 @@
 <template>
   <nuxt-link to="https://cuatro.dev/blog" class="flex flex-col">
     <nuxt-img
-      v-if="dark"
+      v-if="darkMode"
       src="/white-logo.png"
       width="{368}"
       height="{132}"
@@ -18,17 +18,14 @@
       format="png"
       preload
     />
-    <span class="text-black dark:text-white mt-2 ml-auto self-end"
-      >CovidMap</span
-    >
+    <span class="text-black dark:text-white mt-2 ml-auto self-end">CovidMap</span>
   </nuxt-link>
 </template>
 
 <script setup>
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: true,
-  },
-});
+const emitter = useEmitter();
+
+const darkMode = ref(true);
+
+emitter.$on("toggleDarkMode", () => (darkMode.value = !darkMode.value));
 </script>

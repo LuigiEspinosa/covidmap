@@ -3,9 +3,9 @@
     <div class="bg-white dark:bg-[#15202b]">
       <div class="min-h-full">
         <div class="flex mx-auto sm:px-4 lg:space-x-4 justify-between content-around flex-wrap">
-          <SidebarLeft :dark="darkMode" />
+          <SidebarLeft />
           <Chart />
-          <SidebarRight :dark="darkMode" />
+          <SidebarRight />
         </div>
       </div>
     </div>
@@ -13,5 +13,9 @@
 </template>
 
 <script setup>
+const emitter = useEmitter();
+
 const darkMode = ref(true);
+
+emitter.$on("toggleDarkMode", () => (darkMode.value = !darkMode.value));
 </script>

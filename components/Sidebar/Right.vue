@@ -5,7 +5,7 @@
         <div
           class="flex lg:hidden justify-between items-center max-w-full lg:max-w-[80%] mx-0 lg:mx-auto p-2 mt-4 mb-2 h-auto"
         >
-          <Logo :dark="dark" />
+          <Logo />
           <Toggle />
         </div>
 
@@ -19,12 +19,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: true,
-  },
-});
-</script>
