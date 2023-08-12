@@ -3,7 +3,7 @@
     <div class="block w-full xl:w-[350px] max-h-screen">
       <div class="h-full min-h-full flex flex-col px-2 lg:px-0">
         <div
-          class="flex lg:hidden justify-between items-center max-w-full lg:max-w-[80%] mx-0 lg:mx-auto p-2 mt-4 mb-2 h-auto"
+          class="flex lg:hidden justify-between items-center gap-8 max-w-full lg:max-w-[80%] mx-0 lg:mx-auto p-2 mt-4 mb-2 h-auto"
         >
           <Logo />
           <Toggle />
