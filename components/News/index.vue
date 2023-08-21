@@ -19,11 +19,12 @@
 
 <script setup lang="ts">
 import { News } from "~/types/news";
+import human from "human-time";
 
 const { data } = await useFetch<News>("/api/news");
 
 const formatDate = (dateString: string | number | Date) => {
   const date = new Date(dateString);
-  return new Intl.DateTimeFormat("default", { dateStyle: "long" }).format(date);
+  return human(date);
 };
 </script>
