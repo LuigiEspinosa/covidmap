@@ -77,7 +77,7 @@
 	}
 
 	.overlayBlocks {
-		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap w-[20%];
+		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap w-[24%];
 	}
 }
 

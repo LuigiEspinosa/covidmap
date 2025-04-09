@@ -17,13 +17,12 @@
 	</Box>
 </template>
 
-<script setup lang="ts">
-import { News } from "~/types/news";
+<script setup>
 import human from "human-time";
 
-const { data } = await useFetch<News>("/api/news");
+const { data } = await useFetch("/api/news");
 
-const formatDate = (dateString: string | number | Date) => {
+const formatDate = (dateString) => {
 	const date = new Date(dateString);
 	return human(date);
 };

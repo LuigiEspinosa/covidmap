@@ -1460,7 +1460,7 @@ onMounted(() => {
 
 			// show world data
 			function showWorld() {
-				currentCountry = "World";
+				currentCountry = "Earth";
 				currentPolygon = undefined;
 				resetHover();
 
@@ -1633,7 +1633,6 @@ onMounted(() => {
 			// set initial data and names
 			updateCountryName();
 			changeDataType("active");
-			populateCountries(slideData.list);
 
 			setTimeout(updateSeriesTooltip, 3000);
 
@@ -1647,37 +1646,6 @@ onMounted(() => {
 			/**
 			 * Country/state list on the right
 			 */
-
-			function populateCountries(list) {
-				var table = $("#areas tbody");
-				table.find(".area").remove();
-				for (var i = 0; i < list.length; i++) {
-					var area = list[i];
-					var tr = $("<tr>")
-						.addClass("area")
-						.data("areaid", area.id)
-						.appendTo(table)
-						.on("click", function () {
-							selectCountry(polygonSeries.getPolygonById($(this).data("areaid")));
-						})
-						.hover(function () {
-							rollOverCountry(polygonSeries.getPolygonById($(this).data("areaid")));
-						});
-					$("<td>").appendTo(tr).data("areaid", area.id).html(area.name);
-					$("<td>").addClass("value").appendTo(tr).html(area.confirmed);
-					$("<td>").addClass("value").appendTo(tr).html(area.deaths);
-					$("<td>").addClass("value").appendTo(tr).html(area.recovered);
-				}
-				$("#areas")
-					.DataTable({
-						paging: false,
-						select: true,
-					})
-					.column("1")
-					.order("desc")
-					.draw();
-			}
-
 			function idToName(id) {
 				return am4geodata_data_countries2[id]
 					? am4geodata_data_countries2[id].country
