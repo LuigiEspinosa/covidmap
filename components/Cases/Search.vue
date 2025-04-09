@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-1 overflow-auto min-h-fit">
+	<div class="flex-1 overflow-auto">
 		<div
 			class="items-center bg-[#ccc] dark:bg-[#262439] rounded-lg flex mb-4 relative w-full pl-4 pr-2"
 		>
@@ -11,8 +11,8 @@
 			/>
 		</div>
 
-		<!-- <div v-if="pending">Loading...</div>
-		<CountryTable v-else :countries="data.list" /> -->
+		<div v-if="pending">Loading...</div>
+		<CountryTable v-else :countries="data.list" />
 	</div>
 </template>
 

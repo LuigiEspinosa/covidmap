@@ -31,14 +31,7 @@
 							</h2>
 							<p class="text-[1em] mb-2">
 								This sample COVID-19 data visualization dashboard is here for reference purposes
-								only, and is not intended as a source of real statistics. For source code and legacy
-								data go to
-								<nuxt-link
-									class="underline hover:text-[#2ab75b]"
-									to="https://github.com/amcharts/covid-charts"
-									target="_blank"
-									>GitHub repository</nuxt-link
-								>.
+								only, and is not intended as a source of real statistics.
 							</p>
 							<p class="text-xs">Data updated: 6/23/2021, 9:00 PM UTC</p>
 						</div>

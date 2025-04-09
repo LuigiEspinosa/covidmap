@@ -1,4 +1,4 @@
-import { worldTimeline } from "~/server/data/worldTimeline";
+import { worldTimeline } from "@/server/data/worldTimeline";
 import countries from "i18n-iso-countries";
 import enLocale from "i18n-iso-countries/langs/en.json";
 

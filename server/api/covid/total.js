@@ -1,4 +1,4 @@
-import { worldTimeline } from "~/server/data/worldTimeline";
+import { worldTimeline } from "@/server/data/worldTimeline";
 
 export default defineEventHandler(() => {
 	const latest = worldTimeline.find((d) => d.date === "2021-06-24");

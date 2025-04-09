@@ -26,57 +26,26 @@
 
 <script setup>
 const worldCases = ref([
-	{
-		id: "infection",
-		stats: "Loading...",
-		title: "Infections",
-	},
-	{
-		id: "death",
-		stats: "Loading...",
-		title: "Deaths",
-	},
-	{
-		id: "recover",
-		stats: "Loading...",
-		title: "Recoveries",
-	},
-	{
-		id: "active",
-		stats: "Loading...",
-		title: "Critical",
-	},
+	{ id: "infection", stats: "Loading...", title: "Confirmed" },
+	{ id: "death", stats: "Loading...", title: "Deaths" },
+	{ id: "recover", stats: "Loading...", title: "Recoveries" },
+	{ id: "active", stats: "Loading...", title: "Active" },
 ]);
 
-onMounted(async () => {
-	const { data } = await useFetch("/api/covid/total");
+const { data, error } = await useFetch("/api/covid/total");
 
-	if (data.value) {
-		const { confirmed, deaths, recovered } = data.value;
-		const active = confirmed - deaths - recovered;
+if (data.value) {
+	const { confirmed, deaths, recovered } = data.value;
+	const active = confirmed - deaths - recovered;
 
-		worldCases.value = [
-			{
-				id: "infection",
-				stats: confirmed.toLocaleString(),
-				title: "Confirmed",
-			},
-			{
-				id: "death",
-				stats: deaths.toLocaleString(),
-				title: "Deaths",
-			},
-			{
-				id: "recover",
-				stats: recovered.toLocaleString(),
-				title: "Recoveries",
-			},
-			{
-				id: "active",
-				stats: active.toLocaleString(),
-				title: "Active",
-			},
-		];
-	}
-});
+	worldCases.value = [
+		{ id: "infection", stats: confirmed?.toLocaleString(), title: "Confirmed" },
+		{ id: "death", stats: deaths?.toLocaleString(), title: "Deaths" },
+		{ id: "recover", stats: recovered?.toLocaleString(), title: "Recoveries" },
+		{ id: "active", stats: active?.toLocaleString(), title: "Active" },
+	];
+} else {
+	console.warn("Failed to fetch COVID stats", error.value);
+}
 </script>
+

@@ -52,19 +52,19 @@
 		}
 	}
 
-	#infection {
+	#confirmed {
 		.casesStats {
 			@apply text-[#a57af2];
 		}
 	}
 
-	#death {
+	#deaths {
 		.casesStats {
 			@apply text-[#ea536f];
 		}
 	}
 
-	#recover {
+	#recovered {
 		.casesStats {
 			@apply text-[#7fcc88];
 		}
@@ -77,7 +77,7 @@
 	}
 
 	.overlayBlocks {
-		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap w-[24%];
+		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap mx-auto;
 	}
 }
 

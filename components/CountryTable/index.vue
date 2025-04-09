@@ -2,25 +2,25 @@
 	<div class="bg-red mb-4">
 		<div
 			v-for="cases in sortedList"
-			class="rounded-lg border border-transparent cursor-pointer w-full h-16 flex flex-none justify-between items-center relative group"
+			class="rounded-lg border border-transparent cursor-pointer w-full flex flex-none justify-between items-center relative group"
 		>
 			<div
 				class="bg-[#ccc] dark:bg-[#262439] rounded-lg bottom-0 cursor-pointer flex left-0 max-w-0 group-hover:max-w-full overflow-hidden absolute right-0 top-0 transition-all z-10"
 			>
-				<div class="overlayBlocks">
-					{{ cases.name }}
-				</div>
-
-				<!-- <div v-for="stats in cases.stats" :id="stats.id" class="overlayBlocks">
+				<div
+					v-for="(value, key) in getStatsByCountry(cases.id)"
+					:id="key"
+					class="overlayBlocks w-[24%]"
+				>
 					<span class="casesStats">
-						{{ stats.stats }} <br />
-						{{ stats.title }}
+						{{ value }} <br />
+						{{ key }}
 					</span>
-				</div> -->
+				</div>
 			</div>
 
-			<!-- <div class="w-[30px] mr-4">
-				<img :src="cases.flag" :alt="`${cases.name} Flag`" class="max-w-full" />
+			<div class="w-[30px] mx-2">
+				<span :class="`fi fi-${cases.id.toLowerCase()} max-w-full`" :alt="`${cases.name} Flag`" />
 			</div>
 
 			<div
@@ -34,11 +34,15 @@
 				<div
 					class="text-[#62626f] text-sm min-h-[12px] overflow-hidden text-ellipsis whitespace-nowrap w-full"
 				>
-					<span class="text-[#a57af2] font-semibold">{{ cases.totalCases }} Cases</span>
+					<span class="text-[#a57af2] font-semibold"
+						>{{ getStatsByCountry(cases.id)?.active }} Active</span
+					>
 					<span class="text-[#5f5f88] mx-1">&</span>
-					<span class="text-[#ea536f] font-semibold">{{ cases.totalDeaths }} Deaths</span>
+					<span class="text-[#ea536f] font-semibold"
+						>{{ cases.deaths.toLocaleString() }} Deaths</span
+					>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </template>
@@ -59,4 +63,19 @@ const props = defineProps({
 });
 
 const sortedList = computed(() => [...props.countries].sort((a, b) => b.confirmed - a.confirmed));
+
+const getStatsByCountry = (countryId) => {
+	const country = sortedList.value.find((d) => d.id === countryId);
+	if (!country) return null;
+
+	const { confirmed, deaths, recovered } = country;
+	const active = confirmed - deaths - recovered;
+
+	return {
+		confirmed: confirmed.toLocaleString(),
+		deaths: deaths.toLocaleString(),
+		recovered: recovered.toLocaleString(),
+		active: active.toLocaleString(),
+	};
+};
 </script>
