@@ -54,6 +54,14 @@
 								<li>
 									<button class="contactLink" @click="openModal">Stack</button>
 								</li>
+								<li>
+									<nuxt-link
+										class="contactLink"
+										to="https://github.com/LuigiEspinosa/covidmap"
+										target="_blank"
+										>Github</nuxt-link
+									>
+								</li>
 							</ul>
 						</div>
 					</template>
@@ -76,4 +84,3 @@ const openModal = () => {
 	modalOpen.value = true;
 };
 </script>
-

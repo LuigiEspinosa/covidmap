@@ -42,7 +42,7 @@
 /* custom classNames */
 @layer components {
 	.contactLink {
-		@apply text-black dark:text-white hover:text-[#2ab75b] hover:dark:text-[#2ab75b] text-[1em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
+		@apply text-black dark:text-white hover:text-[#2ab75b] hover:dark:text-[#2ab75b] text-[0.8em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
 	}
 
 	.toggleTheme {
@@ -80,4 +80,3 @@
 		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap mx-auto;
 	}
 }
-
