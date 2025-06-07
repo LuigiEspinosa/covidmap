@@ -2,44 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #444444 transparent;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+*::-webkit-scrollbar-track {
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:hover {
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:active {
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: #444444;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #444444;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: #444444;
+}
+
 /* custom classNames */
 @layer components {
-  .contactLink {
-    @apply text-black dark:text-white hover:text-[#2ab75b] hover:dark:text-[#2ab75b] text-[1em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
-  }
+	.contactLink {
+		@apply text-black dark:text-white hover:text-[#2ab75b] hover:dark:text-[#2ab75b] text-[1em] py-2 px-3 no-underline uppercase transition-[0.4s] duration-[ease-out];
+	}
 
-  .toggleTheme {
-    &:before {
-      content: "";
-      @apply bg-[#444] absolute rounded-full bottom-[4.5px] left-[6px] w-6 h-6 transition;
-    }
-  }
+	.toggleTheme {
+		&:before {
+			content: "";
+			@apply bg-[#444] absolute rounded-full bottom-[4.5px] left-[6px] w-6 h-6 transition;
+		}
+	}
 
-  #infection {
-    .casesStats {
-      @apply text-[#a57af2];
-    }
-  }
+	#confirmed {
+		.casesStats {
+			@apply text-[#a57af2];
+		}
+	}
 
-  #death {
-    .casesStats {
-      @apply text-[#ea536f];
-    }
-  }
+	#deaths {
+		.casesStats {
+			@apply text-[#ea536f];
+		}
+	}
 
-  #recover {
-    .casesStats {
-      @apply text-[#7fcc88];
-    }
-  }
+	#recovered {
+		.casesStats {
+			@apply text-[#7fcc88];
+		}
+	}
 
-  #active {
-    .casesStats {
-      @apply text-[#ffc928];
-    }
-  }
+	#active {
+		.casesStats {
+			@apply text-[#ffc928];
+		}
+	}
 
-  .overlayBlocks {
-    @apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap w-[20%];
-  }
+	.overlayBlocks {
+		@apply items-center text-black dark:text-white flex flex-col font-semibold text-xs justify-center overflow-hidden p-[5px] text-center whitespace-nowrap mx-auto;
+	}
 }
+
