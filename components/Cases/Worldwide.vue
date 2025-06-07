@@ -26,9 +26,9 @@
 
 <script setup>
 const worldCases = ref([
-	{ id: "infection", stats: "Loading...", title: "Confirmed" },
-	{ id: "death", stats: "Loading...", title: "Deaths" },
-	{ id: "recover", stats: "Loading...", title: "Recoveries" },
+	{ id: "confirmed", stats: "Loading...", title: "Confirmed" },
+	{ id: "deaths", stats: "Loading...", title: "deathss" },
+	{ id: "recovered", stats: "Loading...", title: "Recoveries" },
 	{ id: "active", stats: "Loading...", title: "Active" },
 ]);
 
@@ -39,9 +39,9 @@ if (data.value) {
 	const active = confirmed - deaths - recovered;
 
 	worldCases.value = [
-		{ id: "infection", stats: confirmed?.toLocaleString(), title: "Confirmed" },
-		{ id: "death", stats: deaths?.toLocaleString(), title: "Deaths" },
-		{ id: "recover", stats: recovered?.toLocaleString(), title: "Recoveries" },
+		{ id: "confirmed", stats: confirmed?.toLocaleString(), title: "Confirmed" },
+		{ id: "deaths", stats: deaths?.toLocaleString(), title: "Deaths" },
+		{ id: "recovered", stats: recovered?.toLocaleString(), title: "Recoveries" },
 		{ id: "active", stats: active?.toLocaleString(), title: "Active" },
 	];
 } else {
